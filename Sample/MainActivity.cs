@@ -26,7 +26,7 @@ namespace Sample
         private int currentColor;
         private Drawable oldBackground;
         private ViewPager pager;
-        private PagerSlidingTabStrip tabs;
+      //  private PagerSlidingTabStrip tabs;
 
         protected override int LayoutResource
         {
@@ -54,15 +54,15 @@ namespace Sample
 
             adapter = new MyPagerAdapter(SupportFragmentManager);
             pager = FindViewById<ViewPager>(Resource.Id.pager);
-            tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabs);
+            //tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabs);
             pager.Adapter = adapter;
-            tabs.SetViewPager(pager); // Menu Tab - Action bar
+            //tabs.SetViewPager(pager); // Menu Tab - Action bar
 
             var pageMargin = (int) TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
             pager.PageMargin = pageMargin;
             pager.CurrentItem = 0;
-            tabs.OnTabReselectedListener = this;
-            tabs.OnPageChangeListener = this;
+            //tabs.OnTabReselectedListener = this;
+            //tabs.OnPageChangeListener = this;
 
             SupportActionBar.SetDisplayHomeAsUpEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(false);
@@ -72,7 +72,7 @@ namespace Sample
 
         private void ChangeColor(Color newColor)
         {
-            tabs.SetBackgroundColor(newColor);
+            //tabs.SetBackgroundColor(newColor);
 
             // change ActionBar color just if an ActionBar is available
             Drawable colorDrawable = new ColorDrawable(newColor);
@@ -139,7 +139,7 @@ namespace Sample
 
                 case Resource.Id.action_icons:
 
-                    var intent = new Intent(this, typeof(SecondActivity));
+                    var intent = new Intent(this, typeof(activity3_map));
                     StartActivity(intent);
                     return true;
 

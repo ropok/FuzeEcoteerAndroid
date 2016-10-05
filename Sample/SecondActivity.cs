@@ -12,12 +12,13 @@ using com.refractored;
 using Java.Interop;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
+using Android.Gms.Maps;
 
 namespace Sample
 {
     [Activity(Label = "Icon Tab Sample", Icon = "@drawable/icon", ParentActivity = typeof(MainActivity))]
     [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
-    public class SecondActivity : BaseActivity, IOnTabReselectedListener, ViewPager.IOnPageChangeListener
+    public class SecondActivity : BaseActivity, IOnTabReselectedListener, ViewPager.IOnPageChangeListener, IOnMapReadyCallback
     {
         private MyIconPagerAdapter adapter;
         private int count = 1;
@@ -25,6 +26,7 @@ namespace Sample
         private Drawable oldBackground;
         private ViewPager pager;
         private PagerSlidingTabStrip tabs;
+        private GoogleMap GMap;
 
         protected override int LayoutResource
         {
@@ -44,6 +46,18 @@ namespace Sample
         public void OnPageSelected(int position)
         {
             Console.WriteLine("Page selected: " + position);
+        }
+        private void SetUpMap()
+        {
+            if (GMap == null)
+            {
+                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);
+            }
+        }
+
+        public void OnMapReady(GoogleMap googleMap)
+        {
+            this.GMap = googleMap;
         }
 
         protected override void OnCreate(Bundle bundle)
@@ -66,6 +80,7 @@ namespace Sample
             SupportActionBar.SetHomeButtonEnabled(true);
 
             ChangeColor(Resources.GetColor(Resource.Color.green));
+            //SetUpMap();
         }
 
         private void ChangeColor(Color newColor)
@@ -117,6 +132,8 @@ namespace Sample
         {
             Toast.MakeText(this, "Tab reselected: " + position, ToastLength.Short).Show();
         }
+
+
 
         #endregion
     }

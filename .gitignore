@@ -53,3 +53,5 @@ _ReSharper*/
 
 # Office Temp Files
 ~$*
+
+AndroidManifest.xml

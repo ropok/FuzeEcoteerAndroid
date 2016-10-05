@@ -17,6 +17,11 @@
         app:pstsDividerWidth="1dp"
         app:pstsDividerPadding="12dp"
         app:pstsDividerColor="#50FFFFFF" />
+  <fragment
+        android:id="@+id/googlemap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
 <!--Change this to true if you want to center items-->
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
