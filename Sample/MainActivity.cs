@@ -15,6 +15,7 @@ using Java.Lang;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
 using String = Java.Lang.String;
+using Sample.Fragments;
 
 namespace Sample
 {
@@ -27,6 +28,7 @@ namespace Sample
         private Drawable oldBackground;
         private ViewPager pager;
       //  private PagerSlidingTabStrip tabs;
+
 
         protected override int LayoutResource
         {
@@ -68,6 +70,10 @@ namespace Sample
             SupportActionBar.SetHomeButtonEnabled(false);
 
             ChangeColor(Resources.GetColor(Resource.Color.blue));
+
+            var trans = SupportFragmentManager.BeginTransaction();
+            trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
+            trans.Commit();
         }
 
         private void ChangeColor(Color newColor)
