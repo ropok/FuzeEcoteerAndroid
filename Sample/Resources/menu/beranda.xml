@@ -6,22 +6,23 @@
   <item
     android:id="@+id/beranda_turtle"
     android:icon="@drawable/ic_home_white_48dp"
-    app:showAsAction="always" />
+    app:showAsAction="always"
+    android:title="Turtle"/>
 
   <item
     android:id="@+id/beranda_report"
-    android:icon="@drawable/ic_people_white_48dp"
+    android:icon="@drawable/ic_camera_alt_white_48dp"
     app:showAsAction="always" />
   
   <item
   android:id="@+id/beranda_map"
-  android:icon="@drawable/ic_attach_money_white_48dp"
+  android:icon="@drawable/ic_map_white_48dp"
   app:showAsAction="always"
   android:tag="activity3_map"/>
 
   <item
     android:id="@+id/beranda_explore"
-    android:icon="@drawable/ic_launcher_actionbar"
+    android:icon="@drawable/ic_explore_white_48dp"
     app:showAsAction="always" />
 
 </menu>
