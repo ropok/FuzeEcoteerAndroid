@@ -16,7 +16,7 @@ using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
 using String = Java.Lang.String;
 using Sample.Fragments;
-
+using Android.Support.V7.Widget;
 namespace Sample
 {
     [Activity(Label = "Fuze Ecoteer", MainLauncher = true, Icon = "@drawable/icon")]
@@ -27,6 +27,7 @@ namespace Sample
         private int currentColor;
         private Drawable oldBackground;
         private ViewPager pager;
+        //FrameLayout beranda1_button, beranda2_button;
       //  private PagerSlidingTabStrip tabs;
 
 
@@ -71,10 +72,49 @@ namespace Sample
 
             ChangeColor(Resources.GetColor(Resource.Color.blue));
 
-            var trans = SupportFragmentManager.BeginTransaction();
+            // Init Button
+            //beranda1_button = FindViewById<FrameLayout>(Resource.Id.beranda1);
+            //beranda2_button = FindViewById<FrameLayout>(Resource.Id.beranda2);
+
+            //beranda1_button.Click += beranda1_button_click;
+            //beranda2_button.Click += beranda2_button_click;
+
+            var menuUtama = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.menu_beranda);
+            menuUtama.InflateMenu(Resource.Menu.beranda);
+            menuUtama.MenuItemClick += MenuUtama_MenuItemClick;
+
+           var trans = SupportFragmentManager.BeginTransaction();
             trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
             trans.Commit();
         }
+
+        void MenuUtama_MenuItemClick(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
+        {
+            switch (e.Item.ItemId)
+            {
+                case Resource.Id.beranda_turtle:
+                    //StartActivity(new Intent(this, typeof(acti)));
+                    break;
+
+                case Resource.Id.beranda_map:
+                    StartActivity(new Intent(this, typeof(activity3_map)));
+                    break;
+                    
+            }
+        }
+
+        //private void beranda1_button_click(object sender, EventArgs e)
+        //{
+        //    var trans = SupportFragmentManager.BeginTransaction();
+        //    trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
+        //    trans.Commit();
+        //}
+        //private void beranda2_button_click(object sender, EventArgs e)
+        //{
+        //    var trans = SupportFragmentManager.BeginTransaction();
+        //    trans.Add(Resource.Id.fragmentContainer, new Fragment2(), "Fragment2");
+        //    trans.Commit();
+        //}
 
         private void ChangeColor(Color newColor)
         {
@@ -83,14 +123,14 @@ namespace Sample
             // change ActionBar color just if an ActionBar is available
             Drawable colorDrawable = new ColorDrawable(newColor);
             Drawable bottomDrawable = new ColorDrawable(Resources.GetColor(Android.Resource.Color.Transparent));
-            var ld = new LayerDrawable(new[] {colorDrawable, bottomDrawable});
+            var ld = new LayerDrawable(new[] { colorDrawable, bottomDrawable });
             if (oldBackground == null)
             {
                 SupportActionBar.SetBackgroundDrawable(ld);
             }
             else
             {
-                var td = new TransitionDrawable(new[] {oldBackground, ld});
+                var td = new TransitionDrawable(new[] { oldBackground, ld });
                 SupportActionBar.SetBackgroundDrawable(td);
                 td.StartTransition(200);
             }
@@ -98,13 +138,14 @@ namespace Sample
             oldBackground = ld;
             currentColor = newColor;
         }
+        
+        //[Export("onColorClicked")]
+        //public void OnColorClicked(View v)
+        //{
+        //    var color = Color.ParseColor(v.Tag.ToString());
+        //    ChangeColor(color);
+        //}
 
-        [Export("onColorClicked")]
-        public void OnColorClicked(View v)
-        {
-            var color = Color.ParseColor(v.Tag.ToString());
-            ChangeColor(color);
-        }
 
         protected override void OnSaveInstanceState(Bundle outState)
         {
@@ -116,7 +157,7 @@ namespace Sample
         {
             base.OnRestoreInstanceState(savedInstanceState);
             currentColor = savedInstanceState.GetInt("currentColor");
-            ChangeColor(new Color(currentColor));
+            //ChangeColor(new Color(currentColor));
         }
 
         #region IOnTabReselectedListener implementation
@@ -136,18 +177,19 @@ namespace Sample
             inflater.Inflate(Resource.Menu.main, menu);
             return base.OnCreateOptionsMenu(menu);
         }
-
+        
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             // Handle presses on the action bar items
             switch (item.ItemId)
             {
 
-                case Resource.Id.action_icons:
+                case Resource.Id.beranda_map:
 
                     var intent = new Intent(this, typeof(activity3_map));
                     StartActivity(intent);
                     return true;
+
 
                 default:
                     return base.OnOptionsItemSelected(item);
@@ -155,6 +197,19 @@ namespace Sample
         }
 
         #endregion
+
+        //private void CreateTab(Type activityType, string tag, string label, int dtawableId)
+        //{
+        //    var intent = new Intent(this, activityType);
+        //    intent.AddFlags(ActivityFlags.NewTask);
+
+        //    var spec = TabHost.NewTabSpec(tag);
+        //    var drawbleIcon = Resource.GetDrawable(drawableId);
+        //    spec.SetIndicator(label, drawbleIcon);
+        //    spec.SetContent(intent);
+
+        //    TabHost.AddTab(spec);
+        //}
     }
 
     public class MyPagerAdapter : FragmentPagerAdapter
@@ -191,4 +246,6 @@ namespace Sample
 
         #endregion
     }
+
+
 }

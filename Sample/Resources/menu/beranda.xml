@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+    android:id="@+id/beranda_turtle"
+    android:icon="@drawable/ic_home_white_48dp"
+    app:showAsAction="always" />
+
+  <item
+    android:id="@+id/beranda_report"
+    android:icon="@drawable/ic_people_white_48dp"
+    app:showAsAction="always" />
+  
+  <item
+  android:id="@+id/beranda_map"
+  android:icon="@drawable/ic_attach_money_white_48dp"
+  app:showAsAction="always"
+  android:tag="activity3_map"/>
+
+  <item
+    android:id="@+id/beranda_explore"
+    android:icon="@drawable/ic_launcher_actionbar"
+    app:showAsAction="always" />
+
+</menu>

@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="activity3_map.cs" />
+    <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -113,6 +114,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Fragment1.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment2.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -188,6 +192,12 @@
       <Visible>False</Visible>
       <Version>29.0.0.2</Version>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_map.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\beranda.xml" />
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
