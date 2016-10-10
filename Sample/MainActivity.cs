@@ -19,7 +19,7 @@ using Sample.Fragments;
 using Android.Support.V7.Widget;
 namespace Sample
 {
-    [Activity(Label = "Fuze Ecoteer", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Fuze Ecoteer", Icon = "@drawable/icon")]
     public class MainActivity : BaseActivity, IOnTabReselectedListener, ViewPager.IOnPageChangeListener
     {
         private MyPagerAdapter adapter;
