@@ -45,9 +45,6 @@ namespace Sample
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(latlng, 15);
             GMap.MoveCamera(camera);
 
-            MarkerOptions options = new MarkerOptions().SetPosition(latlng).SetTitle("Blue Temple Dive Shop");
-            options.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.diving_flag));
-
             MarkerOptions KermaLaut = new MarkerOptions()
                 .SetPosition(new LatLng(5.936024, 102.727884))
                 .SetTitle("Kerma Laut")
@@ -83,12 +80,6 @@ namespace Sample
                 .SetTitle("Batu Nisan")
                 .SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.diving_flag));
 
-            MarkerOptions PIR = new MarkerOptions()
-                .SetPosition(new LatLng(5.905651, 102.739760))
-                .SetTitle("PIR")
-                .SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.diving_flag));
-
-            
             MarkerOptions BatuLayar = new MarkerOptions()
                 .SetPosition(new LatLng(5.911266, 102.743233))
                 .SetTitle("Batu Layar")
@@ -122,9 +113,14 @@ namespace Sample
             MarkerOptions TelukKeke = new MarkerOptions()
                 .SetPosition(new LatLng(5.885498, 102.737559))
                 .SetTitle("Teluk Keke")
+                .SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.diving_flag)); 
+
+            MarkerOptions SugarWreck = new MarkerOptions()
+                .SetPosition(new LatLng(5.891, 102.6))
+                .SetTitle("Sugar Wreck")
                 .SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.diving_flag));
 
-            GMap.AddMarker(options);
+
             GMap.AddMarker(KermaLaut);
             GMap.AddMarker(DLagoon);
             GMap.AddMarker(VietnameseWreck);
@@ -132,7 +128,6 @@ namespace Sample
             GMap.AddMarker(TokongLaut);
             GMap.AddMarker(RawaIsland);
             GMap.AddMarker(BatuNisan);
-            GMap.AddMarker(PIR);
             GMap.AddMarker(BatuLayar);
             GMap.AddMarker(PolisWreck);
             GMap.AddMarker(TanjungBasi);
@@ -140,6 +135,7 @@ namespace Sample
             GMap.AddMarker(Bubbles);
             GMap.AddMarker(SharkPoint);
             GMap.AddMarker(TelukKeke);
+            GMap.AddMarker(SugarWreck);
 
         }
     }

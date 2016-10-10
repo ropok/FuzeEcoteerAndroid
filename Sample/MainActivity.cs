@@ -53,6 +53,7 @@ namespace Sample
 
         protected override void OnCreate(Bundle bundle)
         {
+            
             base.OnCreate(bundle);
 
             adapter = new MyPagerAdapter(SupportFragmentManager);
@@ -72,21 +73,56 @@ namespace Sample
 
             ChangeColor(Resources.GetColor(Resource.Color.blue));
 
-            // Init Button
-            //beranda1_button = FindViewById<FrameLayout>(Resource.Id.beranda1);
-            //beranda2_button = FindViewById<FrameLayout>(Resource.Id.beranda2);
+            #region button Initialization
+            var menuT_submit = FindViewById<RelativeLayout>(Resource.Id.menu1);
+            var menuT_intro = FindViewById<RelativeLayout>(Resource.Id.menu2);
+            var menuT_projects = FindViewById<RelativeLayout>(Resource.Id.menu3);
+            var menuT_turtleType = FindViewById<RelativeLayout>(Resource.Id.menu4);
+            var menuT_teamMember = FindViewById<RelativeLayout>(Resource.Id.menu5);
 
-            //beranda1_button.Click += beranda1_button_click;
-            //beranda2_button.Click += beranda2_button_click;
+            menuT_submit.Click += MenuT_submit_Click;
+            menuT_intro.Click += MenuT_intro_Click;
+            menuT_projects.Click += MenuT_projects_Click;
+            menuT_turtleType.Click += MenuT_turtleType_Click;
+            menuT_teamMember.Click += MenuT_teamMember_Click;
+            #endregion
 
             var menuUtama = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.menu_beranda);
             menuUtama.InflateMenu(Resource.Menu.beranda);
             menuUtama.MenuItemClick += MenuUtama_MenuItemClick;
 
-           var trans = SupportFragmentManager.BeginTransaction();
-            trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
-            trans.Commit();
+           //var trans = SupportFragmentManager.BeginTransaction();
+           // trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
+           // trans.Commit();
         }
+
+
+        #region button Control
+        private void MenuT_teamMember_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this, "Team Members", ToastLength.Short).Show();
+        }
+
+        private void MenuT_turtleType_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this, "Turtle Type", ToastLength.Short).Show();
+        }
+
+        private void MenuT_projects_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this, "Project", ToastLength.Short).Show();
+        }
+
+        private void MenuT_intro_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this, "Introduction", ToastLength.Short).Show();
+        }
+
+        private void MenuT_submit_Click(object sender, EventArgs e)
+        {
+            Toast.MakeText(this, "Submit", ToastLength.Short).Show();
+        }
+        #endregion
 
         void MenuUtama_MenuItemClick(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
         {

@@ -3,11 +3,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <item
+
+    <item
     android:id="@+id/beranda_turtle"
     android:icon="@drawable/ic_home_white_48dp"
     app:showAsAction="always"
     android:title="Turtle"/>
+
 
   <item
     android:id="@+id/beranda_report"
