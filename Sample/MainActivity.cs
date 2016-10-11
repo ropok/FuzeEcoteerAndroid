@@ -27,8 +27,9 @@ namespace Sample
         private int currentColor;
         private Drawable oldBackground;
         private ViewPager pager;
+        private RelativeLayout TurtleProjectMenu, ExplorePerhentianMenu;
         //FrameLayout beranda1_button, beranda2_button;
-      //  private PagerSlidingTabStrip tabs;
+        //  private PagerSlidingTabStrip tabs;
 
 
         protected override int LayoutResource
@@ -61,6 +62,8 @@ namespace Sample
             //tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabs);
             pager.Adapter = adapter;
             //tabs.SetViewPager(pager); // Menu Tab - Action bar
+            TurtleProjectMenu = FindViewById<RelativeLayout>(Resource.Id.Menu_TurtleProject);
+            ExplorePerhentianMenu = FindViewById<RelativeLayout>(Resource.Id.Menu_ExplorePerhentian);
 
             var pageMargin = (int) TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
             pager.PageMargin = pageMargin;
@@ -91,9 +94,11 @@ namespace Sample
             menuUtama.InflateMenu(Resource.Menu.beranda);
             menuUtama.MenuItemClick += MenuUtama_MenuItemClick;
 
-           //var trans = SupportFragmentManager.BeginTransaction();
-           // trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
-           // trans.Commit();
+            //var trans = SupportFragmentManager.BeginTransaction();
+            // trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
+            // trans.Commit();
+
+            
         }
 
 
@@ -129,11 +134,23 @@ namespace Sample
             switch (e.Item.ItemId)
             {
                 case Resource.Id.beranda_turtle:
-                    //StartActivity(new Intent(this, typeof(acti)));
+                    //Toast.MakeText(this, "Perhentian Turtle Project", ToastLength.Short).Show();
+                    //StartActivity(new Intent(this, typeof(MainActivity)));
+                    TurtleProjectMenu.Visibility = ViewStates.Visible;
+                    ExplorePerhentianMenu.Visibility = ViewStates.Gone;
+                    break;
+
+                case Resource.Id.beranda_report:
                     break;
 
                 case Resource.Id.beranda_map:
+                    Toast.MakeText(this, "To the Map", ToastLength.Short).Show();
                     StartActivity(new Intent(this, typeof(activity3_map)));
+                    break;
+
+                case Resource.Id.beranda_explore:
+                    ExplorePerhentianMenu.Visibility = ViewStates.Visible;
+                    TurtleProjectMenu.Visibility = ViewStates.Gone;
                     break;
                     
             }

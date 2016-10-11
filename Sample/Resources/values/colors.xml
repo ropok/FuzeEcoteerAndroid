@@ -6,4 +6,7 @@
     <color name="banana">#FFCC00</color>
     <color name="blue">#5AC8FA</color>
     <color name="splash_background">#FEFEFE</color>
+  <color name="DarkBlue">#2ABAFF</color>
+  <color name="DarkerBlue">#0CB0FF</color>
+  <color name="DarkestBlue">#00A0ED</color>
 </resources>

@@ -31,7 +31,7 @@ namespace Sample
 
             Task startupWork = new Task(() =>
                                         {
-                                            Task.Delay(5000);
+                                            Task.Delay(2500);
 
                                         });
             startupWork.ContinueWith(t =>
