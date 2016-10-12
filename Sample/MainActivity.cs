@@ -83,11 +83,14 @@ namespace Sample
             var menuT_turtleType = FindViewById<RelativeLayout>(Resource.Id.menu4);
             var menuT_teamMember = FindViewById<RelativeLayout>(Resource.Id.menu5);
 
+            var menuE_MarinParkRules = FindViewById<RelativeLayout>(Resource.Id.Explore1);
+
             menuT_submit.Click += MenuT_submit_Click;
             menuT_intro.Click += MenuT_intro_Click;
             menuT_projects.Click += MenuT_projects_Click;
             menuT_turtleType.Click += MenuT_turtleType_Click;
             menuT_teamMember.Click += MenuT_teamMember_Click;
+            menuE_MarinParkRules.Click += MenuE_MarinParkRules_Click;
             #endregion
 
             var menuUtama = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.menu_beranda);
@@ -99,6 +102,11 @@ namespace Sample
             // trans.Commit();
 
             
+        }
+
+        private void MenuE_MarinParkRules_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(activity_MarineParkRules)));
         }
 
 
