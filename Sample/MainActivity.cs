@@ -22,11 +22,11 @@ namespace Sample
     [Activity(Label = "Fuze Ecoteer", Icon = "@drawable/icon")]
     public class MainActivity : BaseActivity, IOnTabReselectedListener, ViewPager.IOnPageChangeListener
     {
-        private MyPagerAdapter adapter;
+        //private MyPagerAdapter adapter;
         private int count = 1;
         private int currentColor;
         private Drawable oldBackground;
-        private ViewPager pager;
+        //private ViewPager pager;
         private RelativeLayout TurtleProjectMenu, ExplorePerhentianMenu;
         //FrameLayout beranda1_button, beranda2_button;
         //  private PagerSlidingTabStrip tabs;
@@ -57,19 +57,14 @@ namespace Sample
             
             base.OnCreate(bundle);
 
-            adapter = new MyPagerAdapter(SupportFragmentManager);
-            pager = FindViewById<ViewPager>(Resource.Id.pager);
-            //tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabs);
-            pager.Adapter = adapter;
-            //tabs.SetViewPager(pager); // Menu Tab - Action bar
+            //adapter = new MyPagerAdapter(SupportFragmentManager);
+            //pager.Adapter = adapter;
             TurtleProjectMenu = FindViewById<RelativeLayout>(Resource.Id.Menu_TurtleProject);
             ExplorePerhentianMenu = FindViewById<RelativeLayout>(Resource.Id.Menu_ExplorePerhentian);
 
-            var pageMargin = (int) TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
-            pager.PageMargin = pageMargin;
-            pager.CurrentItem = 0;
-            //tabs.OnTabReselectedListener = this;
-            //tabs.OnPageChangeListener = this;
+            //var pageMargin = (int) TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
+            //pager.PageMargin = pageMargin;
+            //pager.CurrentItem = 0;
 
             SupportActionBar.SetDisplayHomeAsUpEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(false);
@@ -96,10 +91,6 @@ namespace Sample
             var menuUtama = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.menu_beranda);
             menuUtama.InflateMenu(Resource.Menu.beranda);
             menuUtama.MenuItemClick += MenuUtama_MenuItemClick;
-
-            //var trans = SupportFragmentManager.BeginTransaction();
-            // trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
-            // trans.Commit();
 
             
         }
@@ -273,40 +264,40 @@ namespace Sample
         //}
     }
 
-    public class MyPagerAdapter : FragmentPagerAdapter
-    {
-        private readonly string[] Titles =
-        {
-                "Turtle Project", "Report", "Map", "Explore"
-        };
+    //public class MyPagerAdapter : FragmentPagerAdapter
+    //{
+    //    private readonly string[] Titles =
+    //    {
+    //            "Turtle Project", "Report", "Map", "Explore"
+    //    };
 
-        public MyPagerAdapter(FragmentManager fm) : base(fm)
-        {
-        }
+    //    public MyPagerAdapter(FragmentManager fm) : base(fm)
+    //    {
+    //    }
 
-        public override ICharSequence GetPageTitleFormatted(int position)
-        {
-            return new String(Titles[position]);
-        }
+    //    public override ICharSequence GetPageTitleFormatted(int position)
+    //    {
+    //        return new String(Titles[position]);
+    //    }
 
-        #region implemented abstract members of PagerAdapter
+    //    #region implemented abstract members of PagerAdapter
 
-        public override int Count
-        {
-            get { return Titles.Length; }
-        }
+    //    public override int Count
+    //    {
+    //        get { return Titles.Length; }
+    //    }
 
-        #endregion
+    //    #endregion
 
-        #region implemented abstract members of FragmentPagerAdapter
+    //    #region implemented abstract members of FragmentPagerAdapter
 
-        public override Fragment GetItem(int position)
-        {
-            return SuperAwesomeCardFragment.NewInstance(position);
-        }
+    //    public override Fragment GetItem(int position)
+    //    {
+    //        return SuperAwesomeCardFragment.NewInstance(position);
+    //    }
 
-        #endregion
-    }
+    //    #endregion
+    //}
 
 
 }

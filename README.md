@@ -26,5 +26,9 @@ If necessary can be directly sent me email to jalerse@gmail.com
 ###**5. Pop-up Information**
   Information to encourage the user to be Eco Tourism by understanding the [Marine Park Rule](http://greenfins.net/best-dive-practices)
   ![alt tag](https://raw.githubusercontent.com/ropok/imateGest/master/Ecoteer%20Apps%20pg5.jpg)
+## Acknowledgment
+Special thanks for helping our project:
+1. [JamesMontemagno](https://github.com/jamesmontemagno/PagerSlidingTabStrip-for-Xamarin.Android) for helping start the project - because I don't know how to start at the beginning of the project.
+2. [marabdeliarsena](https://github.com/marabdeliarsena/PagerSlidingTabStrip-Sample) for sharing the sliding with fragment code.
 ## License
 MIT License

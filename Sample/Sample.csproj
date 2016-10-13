@@ -97,10 +97,15 @@
   <ItemGroup>
     <Compile Include="activity3_map.cs" />
     <Compile Include="ExploreMenu\MarineParkRules\activity_MarineParkRules.cs" />
+    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_Eco.cs" />
+    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_JungleLife.cs" />
+    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_MarineLife.cs" />
+    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_Rules.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="ExploreMenu\MarineParkRules\Fragment_MarineParkRules.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="PagerAdapter_MPR.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BaseActivity.cs" />
@@ -133,6 +138,18 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MarineParkRules_fragment_card.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MPR_Rules.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MPR_Eco.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MPR_MarineLife.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MPR_JungleLife.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

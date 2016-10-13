@@ -9,4 +9,5 @@
   <color name="DarkBlue">#2ABAFF</color>
   <color name="DarkerBlue">#0CB0FF</color>
   <color name="DarkestBlue">#00A0ED</color>
+  <color name="whiteBG">#EFEFF4</color>
 </resources>
