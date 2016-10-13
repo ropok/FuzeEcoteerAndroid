@@ -96,9 +96,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="activity3_map.cs" />
-    <Compile Include="activity_MarineParkRules.cs" />
+    <Compile Include="ExploreMenu\MarineParkRules\activity_MarineParkRules.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
+    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MarineParkRules.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,6 +130,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_MarineParkRules.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MarineParkRules_fragment_card.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
