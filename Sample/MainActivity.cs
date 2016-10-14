@@ -79,6 +79,12 @@ namespace Sample
             var menuT_teamMember = FindViewById<RelativeLayout>(Resource.Id.menu5);
 
             var menuE_MarinParkRules = FindViewById<RelativeLayout>(Resource.Id.Explore1);
+            var menuE_HowToGetHere = FindViewById<RelativeLayout>(Resource.Id.Explore2);
+            var menuE_CoralWatch = FindViewById<RelativeLayout>(Resource.Id.Explore3);
+            var menuE_FuzeEcoteer = FindViewById<RelativeLayout>(Resource.Id.Explore4);
+            var menuE_FoodDrink = FindViewById<RelativeLayout>(Resource.Id.Explore5);
+            var menuE_MalayDict = FindViewById<RelativeLayout>(Resource.Id.Explore6);
+
 
             menuT_submit.Click += MenuT_submit_Click;
             menuT_intro.Click += MenuT_intro_Click;
@@ -86,6 +92,11 @@ namespace Sample
             menuT_turtleType.Click += MenuT_turtleType_Click;
             menuT_teamMember.Click += MenuT_teamMember_Click;
             menuE_MarinParkRules.Click += MenuE_MarinParkRules_Click;
+            menuE_HowToGetHere.Click += MenuE_HowToGetHere_Click;
+            menuE_CoralWatch.Click += MenuE_CoralWatch_Click;
+            menuE_FuzeEcoteer.Click += MenuE_FuzeEcoteer_Click;
+            menuE_FoodDrink.Click += MenuE_FoodDrink_Click;
+            menuE_MalayDict.Click += MenuE_MalayDict_Click;
             #endregion
 
             var menuUtama = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.menu_beranda);
@@ -93,6 +104,31 @@ namespace Sample
             menuUtama.MenuItemClick += MenuUtama_MenuItemClick;
 
             
+        }
+
+        private void MenuE_MalayDict_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(activity_MalayDict)));
+        }
+
+        private void MenuE_FoodDrink_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(activity_FoodDrink)));
+        }
+
+        private void MenuE_FuzeEcoteer_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(activity_FuzeEcoteer)));
+        }
+
+        private void MenuE_CoralWatch_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(activity_CoralWatch)));
+        }
+
+        private void MenuE_HowToGetHere_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(activity_howToGetHere)));
         }
 
         private void MenuE_MarinParkRules_Click(object sender, EventArgs e)

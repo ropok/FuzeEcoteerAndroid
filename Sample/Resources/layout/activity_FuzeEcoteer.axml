@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="?attr/colorPrimary">
+  <include
+      android:id="@+id/toolbarFE"
+      layout="@layout/toolbar"
+      android:background="?attr/colorPrimary" />
+  <!-- slidingTab -->
+  <com.refractored.PagerSlidingTabStrip
+      android:id="@+id/tabsFE"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:pstsPaddingMiddle="false"
+      app:pstsDividerWidth="1dp"
+      app:pstsDividerPadding="12dp"
+      app:pstsDividerColor="#50FFFFFF"
+      android:textColor="#50FFFFFF"
+      app:pstsTextColorSelected="@android:color/white"
+      app:pstsIndicatorColor="@android:color/white"
+      app:pstsUnderlineColor="@android:color/white" />
+  <android.support.v4.view.ViewPager
+      android:id="@+id/pagerFE"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@color/whiteBG" />
+</LinearLayout>

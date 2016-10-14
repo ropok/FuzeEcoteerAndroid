@@ -96,16 +96,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="activity3_map.cs" />
-    <Compile Include="ExploreMenu\MarineParkRules\activity_MarineParkRules.cs" />
-    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_Eco.cs" />
-    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_JungleLife.cs" />
-    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_MarineLife.cs" />
-    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MPR_Rules.cs" />
+    <Compile Include="ExploreMenu\2.HowToGetHere\activity_howToGetHere.cs" />
+    <Compile Include="ExploreMenu\2.HowToGetHere\Fragment_HTGH_Bus.cs" />
+    <Compile Include="ExploreMenu\2.HowToGetHere\Fragment_HTGH_Flight.cs" />
+    <Compile Include="ExploreMenu\2.HowToGetHere\Fragment_HTGH_Other.cs" />
+    <Compile Include="ExploreMenu\2.HowToGetHere\Fragment_HTGH_Train.cs" />
+    <Compile Include="ExploreMenu\2.HowToGetHere\PagerAdapter_HTGH.cs" />
+    <Compile Include="ExploreMenu\1.MarineParkRules\activity_MarineParkRules.cs" />
+    <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_Eco.cs" />
+    <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_JungleLife.cs" />
+    <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_MarineLife.cs" />
+    <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_Rules.cs" />
+    <Compile Include="ExploreMenu\3.CoralWatch\activity_CoralWatch.cs" />
+    <Compile Include="ExploreMenu\3.CoralWatch\Fragment_CW_1.cs" />
+    <Compile Include="ExploreMenu\3.CoralWatch\Fragment_CW_2.cs" />
+    <Compile Include="ExploreMenu\3.CoralWatch\PagerAdapter_CW.cs" />
+    <Compile Include="ExploreMenu\4.FuzeEcoteer\activity_FuzeEcoteer.cs" />
+    <Compile Include="ExploreMenu\4.FuzeEcoteer\Fragment_FE_Diving.cs" />
+    <Compile Include="ExploreMenu\4.FuzeEcoteer\Fragment_FE_EH.cs" />
+    <Compile Include="ExploreMenu\4.FuzeEcoteer\Fragment_FE_PTP.cs" />
+    <Compile Include="ExploreMenu\4.FuzeEcoteer\PagerAdapter_FE.cs" />
+    <Compile Include="ExploreMenu\5.FoodDrink\activity_FoodDrink.cs" />
+    <Compile Include="ExploreMenu\5.FoodDrink\Fragment_FD_1.cs" />
+    <Compile Include="ExploreMenu\5.FoodDrink\Fragment_FD_2.cs" />
+    <Compile Include="ExploreMenu\5.FoodDrink\PagerAdapter_FD.cs" />
+    <Compile Include="ExploreMenu\6.MalayDict\activity_MalayDict.cs" />
+    <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_3.cs" />
+    <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_2.cs" />
+    <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_1.cs" />
+    <Compile Include="ExploreMenu\6.MalayDict\PagerAdapter_MD.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
-    <Compile Include="ExploreMenu\MarineParkRules\Fragment_MarineParkRules.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="PagerAdapter_MPR.cs" />
+    <Compile Include="ExploreMenu\1.MarineParkRules\PagerAdapter_MPR.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BaseActivity.cs" />
@@ -150,6 +173,63 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Fragment_MPR_JungleLife.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_howToGetHere.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_HTGH_Bus.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_HTGH_Flight.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_HTGH_Train.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_HTGH_Other.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_CoralWatch.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_CW_1.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_CW_2.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_FuzeEcoteer.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_FE_PTP.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_FE_EH.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_FE_Diving.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_FoodDrink.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_MalayDict.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_FD_1.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_FD_2.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MD_1.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MD_2.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MD_3.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -355,6 +435,37 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-mdpi\ic_no_feeding_fish.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_info_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_info_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_info_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_info_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_info_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_info_outline_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_info_outline_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_info_outline_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_info_outline_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_info_outline_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
