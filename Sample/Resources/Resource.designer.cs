@@ -3338,6 +3338,9 @@ namespace Sample
 			// aapt resource value: 0x7f0b0078
 			public const int ImageTurtleF = 2131427448;
 			
+			// aapt resource value: 0x7f0b0088
+			public const int LinLayMPR_1 = 2131427464;
+			
 			// aapt resource value: 0x7f0b006e
 			public const int Menu_ExplorePerhentian = 2131427438;
 			
@@ -3760,9 +3763,6 @@ namespace Sample
 			
 			// aapt resource value: 0x7f0b0080
 			public const int textView = 2131427456;
-			
-			// aapt resource value: 0x7f0b0088
-			public const int textView1 = 2131427464;
 			
 			// aapt resource value: 0x7f0b0082
 			public const int textView2 = 2131427458;
