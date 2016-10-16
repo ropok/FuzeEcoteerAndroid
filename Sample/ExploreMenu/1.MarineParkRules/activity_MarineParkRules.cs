@@ -9,7 +9,7 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace Sample
 {
-    [Activity(Label = "Marine Park Rules")]
+    [Activity(Label = "Marine Park Rules", ParentActivity = typeof(MainActivity))]
     [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
     public class activity_MarineParkRules : AppCompatActivity
     {

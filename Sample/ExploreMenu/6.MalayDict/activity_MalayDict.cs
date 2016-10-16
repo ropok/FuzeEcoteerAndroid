@@ -8,7 +8,8 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace Sample
 {
-    [Activity(Label = "Malay Dictionary")]
+    [Activity(Label = "Malay Dictionary", ParentActivity = typeof(MainActivity))]
+    [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
     public class activity_MalayDict : AppCompatActivity
     {
         private int count = 1;

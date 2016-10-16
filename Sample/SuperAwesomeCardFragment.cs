@@ -1,8 +1,6 @@
 ﻿using Android.Support.V4.App;
 using Android.OS;
 using Android.Support.V4.View;
-
-
 using Android.Widget;
 
 namespace Sample

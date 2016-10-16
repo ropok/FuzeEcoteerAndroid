@@ -8,7 +8,8 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace Sample
 {
-    [Activity(Label = "Fuze Ecoteer Projects")]
+    [Activity(Label = "Fuze Ecoteer Projects", ParentActivity = typeof(MainActivity))]
+    [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
     public class activity_FuzeEcoteer : AppCompatActivity
     {
         private int count = 1;

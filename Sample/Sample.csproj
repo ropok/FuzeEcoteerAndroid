@@ -125,8 +125,6 @@
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_2.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_1.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\PagerAdapter_MD.cs" />
-    <Compile Include="Fragments\Fragment2.cs" />
-    <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ExploreMenu\1.MarineParkRules\PagerAdapter_MPR.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

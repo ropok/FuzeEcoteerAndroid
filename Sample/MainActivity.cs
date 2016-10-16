@@ -15,7 +15,6 @@ using Java.Lang;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
 using String = Java.Lang.String;
-using Sample.Fragments;
 using Android.Support.V7.Widget;
 namespace Sample
 {

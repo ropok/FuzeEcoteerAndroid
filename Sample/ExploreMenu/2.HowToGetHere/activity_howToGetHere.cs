@@ -8,7 +8,8 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace Sample
 {
-    [Activity(Label = "How to Get Here")]
+    [Activity(Label = "How to Get Here", ParentActivity = typeof(MainActivity))]
+    [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
     public class activity_howToGetHere : AppCompatActivity
     {
         private int count = 1;

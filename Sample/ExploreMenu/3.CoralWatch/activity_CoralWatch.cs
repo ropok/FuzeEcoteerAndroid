@@ -8,7 +8,8 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace Sample
 {
-    [Activity(Label = "Coral Watch")]
+    [Activity(Label = "Coral Watch", ParentActivity = typeof(MainActivity))]
+    [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
     public class activity_CoralWatch : AppCompatActivity
     {
         private int count = 1;
