@@ -11,13 +11,12 @@ using Android.Support.V4.App;
 using System;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
-using Java.Lang;
 
 namespace Sample
 {
     [Activity(Label = "Malay Dictionary", ParentActivity = typeof(MainActivity))]
     [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
-    public class activity_MalayDict : AppCompatActivity
+    public class master_slidingWithIcons : AppCompatActivity
     {
         private int count = 1;
         private PagerSlidingTabStrip tabs;
@@ -48,20 +47,16 @@ namespace Sample
 
         }
 
-        public class MyIconPagerAdapter : FragmentPagerAdapter
+        public class MyIconPagerAdapter : FragmentStatePagerAdapter, ICustomTabProvider
         {
-            private readonly string[] titles =
+            private readonly int[] titles =
          {
-            "Daily",
-            "Food",
-            "Travel"
+            Resource.Drawable.ic_home_white_48dp,
+            Resource.Drawable.ic_people_white_48dp, Resource.Drawable.ic_attach_money_white_48dp
          };
 
-            public MyIconPagerAdapter (FragmentManager fm) : base(fm) { }
-            public override ICharSequence GetPageTitleFormatted(int position)
-            {
-                return new Java.Lang.String(titles[position]);
-            }
+            public MyIconPagerAdapter(FragmentManager fm) : base(fm) { }
+
             public override int Count
             {
                 get { return titles.Length; }
@@ -82,6 +77,19 @@ namespace Sample
                     default:
                         return new Fragment_FD_1();
                 }
+            }
+
+            public View GetCustomTabView(ViewGroup parent, int position)
+            {
+                var tablayout =
+                    (LinearLayout)
+                        LayoutInflater.From(Application.Context).Inflate(Resource.Layout.tab_layout, parent, false);
+
+                var tabImage = tablayout.FindViewById<ImageView>(Resource.Id.tabImage);
+
+                tabImage.SetImageResource(titles[position]);
+
+                return tablayout;
             }
         }
 

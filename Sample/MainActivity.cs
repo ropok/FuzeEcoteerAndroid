@@ -1,213 +1,115 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Graphics;
-using Android.Graphics.Drawables;
+﻿using Android.App;
 using Android.OS;
-using Android.Support.V4.App;
+using com.refractored;
 using Android.Support.V4.View;
 using Android.Util;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Views;
 using Android.Widget;
-using com.refractored;
-using Java.Interop;
-using Java.Lang;
+using Android.Support.V4.App;
+using System;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
-using String = Java.Lang.String;
-using Android.Support.V7.Widget;
+using Android.Graphics.Drawables;
+using Android.Graphics;
+using Android.Content;
+
 namespace Sample
 {
     [Activity(Label = "Fuze Ecoteer", Icon = "@drawable/icon")]
-    public class MainActivity : BaseActivity, IOnTabReselectedListener, ViewPager.IOnPageChangeListener
+    public class MainActivity : AppCompatActivity
     {
-        //private MyPagerAdapter adapter;
         private int count = 1;
         private int currentColor;
         private Drawable oldBackground;
-        //private ViewPager pager;
         private RelativeLayout TurtleProjectMenu, ExplorePerhentianMenu;
-        //FrameLayout beranda1_button, beranda2_button;
-        //  private PagerSlidingTabStrip tabs;
-
-
-        protected override int LayoutResource
-        {
-            get { return Resource.Layout.activity_main; }
-        }
-
-        public void OnPageScrollStateChanged(int state)
-        {
-            Console.WriteLine("Page scroll state changed: " + state);
-        }
-
-        public void OnPageScrolled(int position, float positionOffset, int positionOffsetPixels)
-        {
-            Console.WriteLine("Page Scrolled");
-        }
-
-        public void OnPageSelected(int position)
-        {
-            Console.WriteLine("Page selected: " + position);
-        }
+        private PagerSlidingTabStrip tabs;
+        private ViewPager pager;
+        private MyIconPagerAdapter adapter;
 
         protected override void OnCreate(Bundle bundle)
         {
             
             base.OnCreate(bundle);
 
-            //adapter = new MyPagerAdapter(SupportFragmentManager);
-            //pager.Adapter = adapter;
-            TurtleProjectMenu = FindViewById<RelativeLayout>(Resource.Id.Menu_TurtleProject);
-            ExplorePerhentianMenu = FindViewById<RelativeLayout>(Resource.Id.Menu_ExplorePerhentian);
+            SetContentView(Resource.Layout.activity_mainMenu);
 
-            //var pageMargin = (int) TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
-            //pager.PageMargin = pageMargin;
-            //pager.CurrentItem = 0;
+            pager = FindViewById<ViewPager>(Resource.Id.pagerMainMenu);
+            tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabsMainMenu);
+            pager.PageMargin = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
+            pager.CurrentItem = 0;
+                        
+            adapter = new MyIconPagerAdapter(SupportFragmentManager);
+            pager.Adapter = adapter;
+            tabs.SetViewPager(pager);
 
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbarMainMenu);
+            SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(false);
-
             ChangeColor(Resources.GetColor(Resource.Color.blue));
-
-            #region button Initialization
-            var menuT_submit = FindViewById<RelativeLayout>(Resource.Id.menu1);
-            var menuT_intro = FindViewById<RelativeLayout>(Resource.Id.menu2);
-            var menuT_projects = FindViewById<RelativeLayout>(Resource.Id.menu3);
-            var menuT_turtleType = FindViewById<RelativeLayout>(Resource.Id.menu4);
-            var menuT_teamMember = FindViewById<RelativeLayout>(Resource.Id.menu5);
-
-            var menuE_MarinParkRules = FindViewById<RelativeLayout>(Resource.Id.Explore1);
-            var menuE_HowToGetHere = FindViewById<RelativeLayout>(Resource.Id.Explore2);
-            var menuE_CoralWatch = FindViewById<RelativeLayout>(Resource.Id.Explore3);
-            var menuE_FuzeEcoteer = FindViewById<RelativeLayout>(Resource.Id.Explore4);
-            var menuE_FoodDrink = FindViewById<RelativeLayout>(Resource.Id.Explore5);
-            var menuE_MalayDict = FindViewById<RelativeLayout>(Resource.Id.Explore6);
-
-
-            menuT_submit.Click += MenuT_submit_Click;
-            menuT_intro.Click += MenuT_intro_Click;
-            menuT_projects.Click += MenuT_projects_Click;
-            menuT_turtleType.Click += MenuT_turtleType_Click;
-            menuT_teamMember.Click += MenuT_teamMember_Click;
-            menuE_MarinParkRules.Click += MenuE_MarinParkRules_Click;
-            menuE_HowToGetHere.Click += MenuE_HowToGetHere_Click;
-            menuE_CoralWatch.Click += MenuE_CoralWatch_Click;
-            menuE_FuzeEcoteer.Click += MenuE_FuzeEcoteer_Click;
-            menuE_FoodDrink.Click += MenuE_FoodDrink_Click;
-            menuE_MalayDict.Click += MenuE_MalayDict_Click;
-            #endregion
-
-            var menuUtama = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.menu_beranda);
-            menuUtama.InflateMenu(Resource.Menu.beranda);
-            menuUtama.MenuItemClick += MenuUtama_MenuItemClick;
-
-            
         }
-
-        private void MenuE_MalayDict_Click(object sender, EventArgs e)
+        public class MyIconPagerAdapter : FragmentStatePagerAdapter, ICustomTabProvider
         {
-            StartActivity(new Intent(this, typeof(activity_MalayDict)));
-        }
+            private readonly int[] titles =
+         {
+            Resource.Drawable.ic_home_white_48dp,
+            Resource.Drawable.ic_camera_alt_white_48dp,
+            Resource.Drawable.ic_map_white_48dp,
+            Resource.Drawable.ic_explore_white_48dp
+         };
 
-        private void MenuE_FoodDrink_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this, typeof(activity_FoodDrink)));
-        }
+            public MyIconPagerAdapter(FragmentManager fm) : base(fm) { }
 
-        private void MenuE_FuzeEcoteer_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this, typeof(activity_FuzeEcoteer)));
-        }
-
-        private void MenuE_CoralWatch_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this, typeof(activity_CoralWatch)));
-        }
-
-        private void MenuE_HowToGetHere_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this, typeof(activity_howToGetHere)));
-        }
-
-        private void MenuE_MarinParkRules_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this, typeof(activity_MarineParkRules)));
-        }
-
-
-        #region button Control
-        private void MenuT_teamMember_Click(object sender, EventArgs e)
-        {
-            Toast.MakeText(this, "Team Members", ToastLength.Short).Show();
-        }
-
-        private void MenuT_turtleType_Click(object sender, EventArgs e)
-        {
-            Toast.MakeText(this, "Turtle Type", ToastLength.Short).Show();
-        }
-
-        private void MenuT_projects_Click(object sender, EventArgs e)
-        {
-            Toast.MakeText(this, "Project", ToastLength.Short).Show();
-        }
-
-        private void MenuT_intro_Click(object sender, EventArgs e)
-        {
-            Toast.MakeText(this, "Introduction", ToastLength.Short).Show();
-        }
-
-        private void MenuT_submit_Click(object sender, EventArgs e)
-        {
-            Toast.MakeText(this, "Submit", ToastLength.Short).Show();
-        }
-        #endregion
-
-        void MenuUtama_MenuItemClick(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
-        {
-            switch (e.Item.ItemId)
+            public override int Count
             {
-                case Resource.Id.beranda_turtle:
-                    //Toast.MakeText(this, "Perhentian Turtle Project", ToastLength.Short).Show();
-                    //StartActivity(new Intent(this, typeof(MainActivity)));
-                    TurtleProjectMenu.Visibility = ViewStates.Visible;
-                    ExplorePerhentianMenu.Visibility = ViewStates.Gone;
-                    break;
+                get { return titles.Length; }
+            }
 
-                case Resource.Id.beranda_report:
-                    break;
 
-                case Resource.Id.beranda_map:
-                    Toast.MakeText(this, "To the Map", ToastLength.Short).Show();
-                    StartActivity(new Intent(this, typeof(activity3_map)));
-                    break;
+            public override Fragment GetItem(int position)
+            {
+                switch (position)
+                {
+                    case 0:
+                        return new Fragment_MM_Home();
+                    case 1:
+                        return new Fragment_MM_Report();
+                    case 2:
+                        return new Fragment_MM_Map();
+                    case 3:
+                        return new Fragment_MM_Explore();
+                    case 4:
+                    default:
+                        return new Fragment_MM_Home();
+                }
+            }
 
-                case Resource.Id.beranda_explore:
-                    ExplorePerhentianMenu.Visibility = ViewStates.Visible;
-                    TurtleProjectMenu.Visibility = ViewStates.Gone;
-                    break;
-                    
+            public View GetCustomTabView(ViewGroup parent, int position)
+            {
+                var tablayout =
+                    (LinearLayout)
+                        LayoutInflater.From(Application.Context).Inflate(Resource.Layout.tab_layout, parent, false);
+
+                var tabImage = tablayout.FindViewById<ImageView>(Resource.Id.tabImage);
+
+                tabImage.SetImageResource(titles[position]);
+
+                return tablayout;
             }
         }
 
-        //private void beranda1_button_click(object sender, EventArgs e)
-        //{
-        //    var trans = SupportFragmentManager.BeginTransaction();
-        //    trans.Add(Resource.Id.fragmentContainer, new Fragment1(), "Fragment1");
-        //    trans.Commit();
-        //}
-        //private void beranda2_button_click(object sender, EventArgs e)
-        //{
-        //    var trans = SupportFragmentManager.BeginTransaction();
-        //    trans.Add(Resource.Id.fragmentContainer, new Fragment2(), "Fragment2");
-        //    trans.Commit();
-        //}
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            var inflater = MenuInflater;
+            inflater.Inflate(Resource.Menu.main, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
 
+        #region colour
         private void ChangeColor(Color newColor)
         {
-            //tabs.SetBackgroundColor(newColor);
-
-            // change ActionBar color just if an ActionBar is available
             Drawable colorDrawable = new ColorDrawable(newColor);
             Drawable bottomDrawable = new ColorDrawable(Resources.GetColor(Android.Resource.Color.Transparent));
             var ld = new LayerDrawable(new[] { colorDrawable, bottomDrawable });
@@ -225,13 +127,6 @@ namespace Sample
             oldBackground = ld;
             currentColor = newColor;
         }
-        
-        //[Export("onColorClicked")]
-        //public void OnColorClicked(View v)
-        //{
-        //    var color = Color.ParseColor(v.Tag.ToString());
-        //    ChangeColor(color);
-        //}
 
 
         protected override void OnSaveInstanceState(Bundle outState)
@@ -244,95 +139,11 @@ namespace Sample
         {
             base.OnRestoreInstanceState(savedInstanceState);
             currentColor = savedInstanceState.GetInt("currentColor");
-            //ChangeColor(new Color(currentColor));
         }
-
-        #region IOnTabReselectedListener implementation
-
-        public void OnTabReselected(int position)
-        {
-            Toast.MakeText(this, "Tab reselected: " + position, ToastLength.Short).Show();
-        }
-
         #endregion
 
-        #region menu
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            var inflater = MenuInflater;
-            inflater.Inflate(Resource.Menu.main, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
-        
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            // Handle presses on the action bar items
-            switch (item.ItemId)
-            {
-
-                case Resource.Id.beranda_map:
-
-                    var intent = new Intent(this, typeof(activity3_map));
-                    StartActivity(intent);
-                    return true;
-
-
-                default:
-                    return base.OnOptionsItemSelected(item);
-            }
-        }
-
-        #endregion
-
-        //private void CreateTab(Type activityType, string tag, string label, int dtawableId)
-        //{
-        //    var intent = new Intent(this, activityType);
-        //    intent.AddFlags(ActivityFlags.NewTask);
-
-        //    var spec = TabHost.NewTabSpec(tag);
-        //    var drawbleIcon = Resource.GetDrawable(drawableId);
-        //    spec.SetIndicator(label, drawbleIcon);
-        //    spec.SetContent(intent);
-
-        //    TabHost.AddTab(spec);
-        //}
     }
-
-    //public class MyPagerAdapter : FragmentPagerAdapter
-    //{
-    //    private readonly string[] Titles =
-    //    {
-    //            "Turtle Project", "Report", "Map", "Explore"
-    //    };
-
-    //    public MyPagerAdapter(FragmentManager fm) : base(fm)
-    //    {
-    //    }
-
-    //    public override ICharSequence GetPageTitleFormatted(int position)
-    //    {
-    //        return new String(Titles[position]);
-    //    }
-
-    //    #region implemented abstract members of PagerAdapter
-
-    //    public override int Count
-    //    {
-    //        get { return Titles.Length; }
-    //    }
-
-    //    #endregion
-
-    //    #region implemented abstract members of FragmentPagerAdapter
-
-    //    public override Fragment GetItem(int position)
-    //    {
-    //        return SuperAwesomeCardFragment.NewInstance(position);
-    //    }
-
-    //    #endregion
-    //}
 
 
 }

@@ -7,16 +7,17 @@
     android:fitsSystemWindows="true"
     android:background="?attr/colorPrimary">
     <include
-        android:id="@+id/toolbarMD"
+        android:id="@+id/toolbarMainMenu"
         layout="@layout/toolbar"
         android:background="?attr/colorPrimary" />
 <!-- slidingTab -->
     <com.refractored.PagerSlidingTabStrip
-        android:id="@+id/tabsMD"
+        android:id="@+id/tabsMainMenu"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="36dp"
         android:background="?attr/colorPrimary"
         app:pstsPaddingMiddle="false"
+        app:pstsShouldExpand="true"
         app:pstsDividerWidth="1dp"
         app:pstsDividerPadding="12dp"
         app:pstsDividerColor="#50FFFFFF"
@@ -25,7 +26,7 @@
         app:pstsIndicatorColor="@android:color/white"
         app:pstsUnderlineColor="@android:color/white" />
     <android.support.v4.view.ViewPager
-        android:id="@+id/pagerMD"
+        android:id="@+id/pagerMainMenu"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
