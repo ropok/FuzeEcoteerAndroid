@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <LinearLayout
+    <LinearLayout
         android:id="@+id/Menu_ExplorePerhentian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,160 +20,160 @@
             android:background="#54C7FC"
             android:paddingTop="8dp"
             android:paddingBottom="8dp" />
-      <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <!-- START [Menu Explore Perhentian] -->   
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
+        <!-- START [Menu Explore Perhentian] -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
             <!-- Explore1 - Marine Park Rules -->
-            <LinearLayout
-                android:id="@+id/Explore1"
-                android:background="@color/DarkBlue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-                <ImageView
-                    android:id="@+id/ImageTurtleA"
+                <LinearLayout
+                    android:id="@+id/ExploreMarineParkRules"
+                    android:background="@color/DarkBlue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/turtle3"
-                    android:layout_centerVertical="true" />
-                <TextView
-                    android:layout_below="@id/ImageTurtleA"
-                    android:text="Marine Park Rules"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+                    <ImageView
+                        android:id="@+id/ImageTurtleA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/turtle3"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_below="@id/ImageTurtleA"
+                        android:text="Marine Park Rules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            <!-- Explore2 - How to get here -->
+                <LinearLayout
+                    android:id="@+id/ExploreHowToGetHere"
+                    android:background="@color/DarkerBlue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#000000" />
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+                    <ImageView
+                        android:id="@+id/ImageTurtleB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/turtle3"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_below="@id/ImageTurtleB"
+                        android:text="How to Get Here"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+              <!-- Explore3 - Coral Watch -->
+                <LinearLayout
+                    android:id="@+id/ExploreCoralWatch"
+                    android:background="@color/DarkBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+                    <ImageView
+                        android:id="@+id/ImageTurtleC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/turtle3"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_below="@id/ImageTurtleC"
+                        android:text="Coral Watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            <!-- Explore4 - Fuze Ecoteer -->
+                <LinearLayout
+                    android:id="@+id/ExploreFuzeEcoteer"
+                    android:background="@color/DarkerBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+                    <ImageView
+                        android:id="@+id/ImageTurtleD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/turtle3"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_below="@id/ImageTurtleD"
+                        android:text="Fuze Ecoteer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            <!-- Explore5 - Food and Drink -->
+                <LinearLayout
+                    android:id="@+id/ExploreFoodAndDrink"
+                    android:background="@color/DarkBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+                    <ImageView
+                        android:id="@+id/ImageTurtleE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/turtle3"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_below="@id/ImageTurtleE"
+                        android:text="Food and Drink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            <!-- Explore6 - Malay Dictionary -->
+                <LinearLayout
+                    android:id="@+id/ExploreMalayDictionary"
+                    android:background="@color/DarkerBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+                    <ImageView
+                        android:id="@+id/ImageTurtleF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/turtle3"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_below="@id/ImageTurtleF"
+                        android:text="Malay Dictionary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
             </LinearLayout>
-    <!-- Explore2 - How to get here -->
-            <LinearLayout
-                android:id="@+id/Explore2"
-                android:background="@color/DarkerBlue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-                <ImageView
-                    android:id="@+id/ImageTurtleB"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/turtle3"
-                    android:layout_centerVertical="true" />
-                <TextView
-                    android:layout_below="@id/ImageTurtleB"
-                    android:text="How to Get Here"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#000000" />
-            </LinearLayout>
-<!-- 2nd Row Starts here -->
-            <LinearLayout
-                android:id="@+id/Explore3"
-                android:background="@color/DarkBlue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-                <ImageView
-                    android:id="@+id/ImageTurtleC"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/turtle3"
-                    android:layout_centerVertical="true" />
-                <TextView
-                    android:layout_below="@id/ImageTurtleC"
-                    android:text="Coral Watch"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#000000" />
-            </LinearLayout>
-    <!-- Explore4 - Fuze Ecoteer -->
-            <LinearLayout
-                android:id="@+id/Explore4"
-                android:background="@color/DarkerBlue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-                <ImageView
-                    android:id="@+id/ImageTurtleD"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/turtle3"
-                    android:layout_centerVertical="true" />
-                <TextView
-                    android:layout_below="@id/ImageTurtleD"
-                    android:text="Fuze Ecoteer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#000000" />
-            </LinearLayout>
-    <!-- Explore5 - Food and Drink -->
-            <LinearLayout
-                android:id="@+id/Explore5"
-                android:background="@color/DarkBlue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-                <ImageView
-                    android:id="@+id/ImageTurtleE"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/turtle3"
-                    android:layout_centerVertical="true" />
-                <TextView
-                    android:layout_below="@id/ImageTurtleE"
-                    android:text="Food and Drink"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#000000" />
-            </LinearLayout>
-    <!-- Explore6 - Malay Dictionary -->
-            <LinearLayout
-                android:id="@+id/Explore6"
-                android:background="@color/DarkerBlue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-                <ImageView
-                    android:id="@+id/ImageTurtleF"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/turtle3"
-                    android:layout_centerVertical="true" />
-                <TextView
-                    android:layout_below="@id/ImageTurtleF"
-                    android:text="Malay Dictionary"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="#000000" />
-            </LinearLayout>
-        </LinearLayout>
-    <!-- END [Menu Explore Perhentian] -->
-    </ScrollView>
+        <!-- END [Menu Explore Perhentian] -->
+        </ScrollView>
     </LinearLayout>
 </FrameLayout>
