@@ -3,4 +3,7 @@
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">FuzeEcotter</string>
 	<string name="action_contact">Contact</string>
+  <string name="openCamera">Open Camera</string>
+  <string name="ok">OK</string>
+  <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
 </resources>

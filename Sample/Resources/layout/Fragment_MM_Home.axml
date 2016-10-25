@@ -28,7 +28,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:orientation="vertical">
-        <!-- Explore1 - Marine Park Rules -->
+        <!-- Home1 - Introduction -->
         <LinearLayout
             android:id="@+id/MainMenu_Introduction"
             android:background="@color/DarkBlue"
@@ -52,7 +52,7 @@
               android:gravity="center"
               android:textColor="#000000" />
         </LinearLayout>
-        <!-- Explore2 - How to get here -->
+        <!-- Home 2 - Species -->
         <LinearLayout
             android:id="@+id/MainMenu_Species"
             android:background="@color/DarkerBlue"
