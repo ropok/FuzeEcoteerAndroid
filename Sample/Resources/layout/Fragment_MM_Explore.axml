@@ -36,13 +36,13 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:orientation="vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="16dp">
+                    android:paddingTop="@dimen/padding_MM_explore"
+                    android:paddingBottom="@dimen/padding_MM_explore">
                     <ImageView
                         android:id="@+id/ImageTurtleA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/turtle3"
+                        android:src="@drawable/ic_playlist_add_check_white_48dp"
                         android:layout_centerVertical="true" />
                     <TextView
                         android:layout_below="@id/ImageTurtleA"
@@ -60,13 +60,13 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:orientation="vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="16dp">
+                    android:paddingTop="@dimen/padding_MM_explore"
+                    android:paddingBottom="@dimen/padding_MM_explore">
                     <ImageView
                         android:id="@+id/ImageTurtleB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/turtle3"
+                        android:src="@drawable/ic_pin_drop_white_48dp"
                         android:layout_centerVertical="true" />
                     <TextView
                         android:layout_below="@id/ImageTurtleB"
@@ -76,7 +76,7 @@
                         android:gravity="center"
                         android:textColor="#000000" />
                 </LinearLayout>
-              <!-- Explore3 - Coral Watch -->
+            <!-- Explore3 - Coral Watch -->
                 <LinearLayout
                     android:id="@+id/ExploreCoralWatch"
                     android:background="@color/DarkBlue"
@@ -84,13 +84,13 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:orientation="vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="16dp">
+                    android:paddingTop="@dimen/padding_MM_explore"
+                    android:paddingBottom="@dimen/padding_MM_explore">
                     <ImageView
                         android:id="@+id/ImageTurtleC"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/turtle3"
+                        android:src="@drawable/ic_remove_red_eye_white_48dp"
                         android:layout_centerVertical="true" />
                     <TextView
                         android:layout_below="@id/ImageTurtleC"
@@ -108,13 +108,13 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:orientation="vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="16dp">
+                    android:paddingTop="@dimen/padding_MM_explore"
+                    android:paddingBottom="@dimen/padding_MM_explore">
                     <ImageView
                         android:id="@+id/ImageTurtleD"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/turtle3"
+                        android:src="@drawable/ic_fingerprint_white_48dp"
                         android:layout_centerVertical="true" />
                     <TextView
                         android:layout_below="@id/ImageTurtleD"
@@ -132,13 +132,13 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:orientation="vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="16dp">
+                    android:paddingTop="@dimen/padding_MM_explore"
+                    android:paddingBottom="@dimen/padding_MM_explore">
                     <ImageView
                         android:id="@+id/ImageTurtleE"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/turtle3"
+                        android:src="@drawable/ic_restaurant_white_48dp"
                         android:layout_centerVertical="true" />
                     <TextView
                         android:layout_below="@id/ImageTurtleE"
@@ -156,13 +156,13 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:orientation="vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="16dp">
+                    android:paddingTop="@dimen/padding_MM_explore"
+                    android:paddingBottom="@dimen/padding_MM_explore">
                     <ImageView
                         android:id="@+id/ImageTurtleF"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/turtle3"
+                        android:src="@drawable/ic_import_contacts_white_48dp"
                         android:layout_centerVertical="true" />
                     <TextView
                         android:layout_below="@id/ImageTurtleF"

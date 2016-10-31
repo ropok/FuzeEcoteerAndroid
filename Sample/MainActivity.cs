@@ -55,7 +55,6 @@ namespace Sample
             private readonly int[] titles =
          {
             Resource.Drawable.ic_home_white_48dp,
-            Resource.Drawable.ic_camera_alt_white_48dp,
             Resource.Drawable.ic_map_white_48dp,
             Resource.Drawable.ic_explore_white_48dp
          };
@@ -75,12 +74,10 @@ namespace Sample
                     case 0:
                         return new Fragment_MM_Home();
                     case 1:
-                        return new Fragment_MM_Report();
-                    case 2:
                         return new Fragment_MM_Map();
-                    case 3:
+                    case 2:
                         return new Fragment_MM_Explore();
-                    case 4:
+                    case 3:
                     default:
                         return new Fragment_MM_Home();
                 }
