@@ -35,7 +35,7 @@ namespace Sample
         * Callback is defined in resource layout definition.
         */
         [Export]
-        public void ShowCamera ()
+        public void ShowCamera()
         {
             if (ActivityCompat.CheckSelfPermission(this, Manifest.Permission.Camera) != (int)Permission.Granted)
             {
@@ -55,9 +55,9 @@ namespace Sample
             {
                 Snackbar.Make(layout, Resource.String.permission_camera_rationale,
                     Snackbar.LengthIndefinite).SetAction(Resource.String.ok, new Action<View>(delegate (View obj)
-                   {
-                       ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.Camera }, REQUEST_CAMERA);
-                   })).Show();
+                    {
+                        ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.Camera }, REQUEST_CAMERA);
+                    })).Show();
             }
             else
             {
@@ -76,12 +76,13 @@ namespace Sample
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
-            Bitmap bitmap = (Bitmap)data.Extras.Get("data");
-                if(imageView != null)
-                {
 
-                    imageView.SetImageBitmap(bitmap);
-                }
+            Bitmap bitmap = (Bitmap)data.Extras.Get("data");
+            if (imageView != null)
+            {
+
+                imageView.SetImageBitmap(bitmap);
+            }
         }
     }
 

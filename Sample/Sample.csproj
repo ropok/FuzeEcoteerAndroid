@@ -107,7 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="activity3_map.cs" />
+    <Compile Include="activity_Report.cs" />
     <Compile Include="activity_ReportCamera.cs" />
+    <Compile Include="BitmapHelpers.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Explore.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Home.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Map.cs" />

@@ -4,11 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:weightSum="10">
-  <ImageView
+  <!--<ImageView
     android:layout_weight="9"
     android:id="@+id/imageViewCam"
-    android:layout_width="match_parent"
-    android:layout_height="fill_parent"/>
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:adjustViewBounds="true"/>-->
   <Button
     android:layout_weight="1"
     android:id="@+id/takePhotoButton"
