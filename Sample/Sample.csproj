@@ -144,9 +144,11 @@
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_1.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\PagerAdapter_MD.cs" />
     <Compile Include="ImageActivity.cs" />
+    <Compile Include="ListViewAdapter_MD.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ExploreMenu\1.MarineParkRules\PagerAdapter_MPR.cs" />
     <Compile Include="master_slidingWithIcons.cs" />
+    <Compile Include="MD.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BaseActivity.cs" />
@@ -266,6 +268,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_ReportCamera.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListItem_MD_1.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
