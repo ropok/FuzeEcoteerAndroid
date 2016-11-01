@@ -4,148 +4,148 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_margin="8dp"
-      card_view:cardBackgroundColor="@android:color/white"
-      card_view:cardCornerRadius="8dp">
-    <LinearLayout
-    android:id="@+id/Menu_PTP"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-      <ScrollView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-        <!-- START [Menu Perhentian Turtle Projects] -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="8dp">
         <LinearLayout
+            android:id="@+id/Menu_PTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-          <!-- PTP1 - Submit Turtle Photos -->
-          <LinearLayout
-              android:id="@+id/PTP_1"
-              android:background="@color/DarkBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_MM_explore"
-              android:paddingBottom="@dimen/padding_MM_explore">
-            <ImageView
-                android:id="@+id/ImageTurtle"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/Turtle3"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/ImageTurtle"
-                android:text="Submit Turtle Photos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
-          <!-- PTP2 - Introduction -->
-          <LinearLayout
-              android:id="@+id/PTP_2"
-              android:background="@color/DarkerBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_MM_explore"
-              android:paddingBottom="@dimen/padding_MM_explore">
-            <ImageView
-                android:id="@+id/ImageTurtle1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/Turtle3"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/ImageTurtle1"
-                android:text="Introduction"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
-          <!-- PTP3 - Projects -->
-          <LinearLayout
-              android:id="@+id/PTP_3"
-              android:background="@color/DarkBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_MM_explore"
-              android:paddingBottom="@dimen/padding_MM_explore">
-            <ImageView
-                android:id="@+id/ImageTurtle2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/Turtle3"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/ImageTurtle2"
-                android:text="Projects"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
-          <!-- PTP4 - Turtle Types -->
-          <LinearLayout
-              android:id="@+id/PTP_4"
-              android:background="@color/DarkerBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_MM_explore"
-              android:paddingBottom="@dimen/padding_MM_explore">
-            <ImageView
-                android:id="@+id/ImageTurtle3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/Turtle3"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/ImageTurtle3"
-                android:text="Turtle Types"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
-          <!-- PTP5 - Team Members -->
-          <LinearLayout
-              android:id="@+id/PTP_5"
-              android:background="@color/DarkBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_MM_explore"
-              android:paddingBottom="@dimen/padding_MM_explore">
-            <ImageView
-                android:id="@+id/ImageTurtle4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/Turtle3"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/ImageTurtle4"
-                android:text="Team Members"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
+                android:layout_height="wrap_content">
+            <!-- START [Menu Perhentian Turtle Projects] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <!-- PTP1 - Submit Turtle Photos -->
+                    <LinearLayout
+                        android:id="@+id/PTP_1"
+                        android:background="@color/DarkBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_MM_explore"
+                        android:paddingBottom="@dimen/padding_MM_explore">
+                        <ImageView
+                            android:id="@+id/ImageTurtle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/Turtle3"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/ImageTurtle"
+                            android:text="Submit Turtle Photos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                <!-- PTP2 - Introduction -->
+                    <LinearLayout
+                        android:id="@+id/PTP_2"
+                        android:background="@color/DarkerBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_MM_explore"
+                        android:paddingBottom="@dimen/padding_MM_explore">
+                        <ImageView
+                            android:id="@+id/ImageTurtle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/Turtle3"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/ImageTurtle1"
+                            android:text="Introduction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                <!-- PTP3 - Projects -->
+                    <LinearLayout
+                        android:id="@+id/PTP_3"
+                        android:background="@color/DarkBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_MM_explore"
+                        android:paddingBottom="@dimen/padding_MM_explore">
+                        <ImageView
+                            android:id="@+id/ImageTurtle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/Turtle3"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/ImageTurtle2"
+                            android:text="Projects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                <!-- PTP4 - Turtle Types -->
+                    <LinearLayout
+                        android:id="@+id/PTP_4"
+                        android:background="@color/DarkerBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_MM_explore"
+                        android:paddingBottom="@dimen/padding_MM_explore">
+                        <ImageView
+                            android:id="@+id/ImageTurtle3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/Turtle3"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/ImageTurtle3"
+                            android:text="Turtle Types"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                <!-- PTP5 - Team Members -->
+                    <LinearLayout
+                        android:id="@+id/PTP_5"
+                        android:background="@color/DarkBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_MM_explore"
+                        android:paddingBottom="@dimen/padding_MM_explore">
+                        <ImageView
+                            android:id="@+id/ImageTurtle4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/Turtle3"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/ImageTurtle4"
+                            android:text="Team Members"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            <!-- END [Menu Perhentian Turtle Projects] -->
+            </ScrollView>
         </LinearLayout>
-        <!-- END [Menu Perhentian Turtle Projects] -->
-      </ScrollView>
-    </LinearLayout>
-  </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
 </FrameLayout>
