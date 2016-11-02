@@ -35,8 +35,12 @@ namespace Sample
                 case 2:
                     return new Fragment_MD_3();
                 case 3:
+                    return new Fragment_MD_4();
+                case 4:
+                    return new Fragment_MD_5();
+                case 5:
                 default:
-                    return new Fragment_FD_1();
+                    return new Fragment_MD_1();
             }
         }
     }

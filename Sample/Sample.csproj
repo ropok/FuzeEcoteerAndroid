@@ -139,6 +139,8 @@
     <Compile Include="ExploreMenu\5.FoodDrink\Fragment_FD_2.cs" />
     <Compile Include="ExploreMenu\5.FoodDrink\PagerAdapter_FD.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\activity_MalayDict.cs" />
+    <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_5.cs" />
+    <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_4.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_3.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_2.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_1.cs" />
@@ -270,7 +272,13 @@
     <AndroidResource Include="Resources\layout\activity_ReportCamera.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ListItem_MD_1.axml">
+    <AndroidResource Include="Resources\layout\ListItem_MD.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MD_4.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_MD_5.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

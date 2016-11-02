@@ -44,7 +44,7 @@ namespace Sample
 
             if (row == null)
             {
-                row = LayoutInflater.From(mContext).Inflate(Resource.Layout.ListItem_MD_1, null, false);
+                row = LayoutInflater.From(mContext).Inflate(Resource.Layout.ListItem_MD, null, false);
             }
 
             TextView inEnglish = row.FindViewById<TextView>(Resource.Id.inEnglish);
