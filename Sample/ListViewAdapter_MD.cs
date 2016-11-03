@@ -55,7 +55,7 @@ namespace Sample
 
             TextView inSay = row.FindViewById<TextView>(Resource.Id.inSay);
             inSay.Text = mItems[position].Say;
-
+            
             return row;
         }
     }

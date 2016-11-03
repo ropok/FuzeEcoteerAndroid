@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/padding_small_listText"
+    android:paddingLeft="@dimen/padding_small_listText"
+    android:paddingTop="@dimen/padding_MM_explore"
+    android:paddingBottom="@dimen/padding_MM_explore">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_no_feeding_fish"
+        android:adjustViewBounds="true"
+        android:id="@+id/inImage" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:paddingLeft="@dimen/padding_small_listText"
+        android:paddingBottom="@dimen/padding_small_listText">
+        <TextView
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/inTitle" />
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_weight="2"
+            android:id="@+id/inDescription" />
+        <TextView
+            android:text="Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/inPrice" />
+    </LinearLayout>
+</LinearLayout>
