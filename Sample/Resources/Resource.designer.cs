@@ -3578,130 +3578,157 @@ namespace Sample
 			public const int diving_flag = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int FD_rotiCanai = 2130837630;
+			public const int drink_miloAis = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int FuzeEcoteerBanner2 = 2130837631;
+			public const int drink_Neslo = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_action_user = 2130837632;
+			public const int drink_tehTarik = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_attach_money_white_48dp = 2130837633;
+			public const int FD_rotiCanai = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_camera_alt_white_48dp = 2130837634;
+			public const int food_chickenCurry = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_explore_white_48dp = 2130837635;
+			public const int food_friedChicken = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_fingerprint_white_48dp = 2130837636;
+			public const int food_meeGoreng = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_home_white_24dp = 2130837637;
+			public const int food_meeRebus = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_home_white_48dp = 2130837638;
+			public const int food_nasiGoreng = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_import_contacts_white_48dp = 2130837639;
+			public const int food_rotiCanai = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_info_outline_white_48dp = 2130837640;
+			public const int FuzeEcoteerBanner2 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_info_white_48dp = 2130837641;
+			public const int ic_action_user = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_launcher = 2130837642;
+			public const int ic_attach_money_white_48dp = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_launcher_actionbar = 2130837643;
+			public const int ic_camera_alt_white_48dp = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_launcher_chrome = 2130837644;
+			public const int ic_explore_white_48dp = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_launcher_gmail = 2130837645;
+			public const int ic_fingerprint_white_48dp = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_launcher_gmaps = 2130837646;
+			public const int ic_home_white_24dp = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_launcher_gplus = 2130837647;
+			public const int ic_home_white_48dp = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_map_white_48dp = 2130837648;
+			public const int ic_import_contacts_white_48dp = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_no_feeding_fish = 2130837649;
+			public const int ic_info_outline_white_48dp = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_people_white_48dp = 2130837650;
+			public const int ic_info_white_48dp = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_pin_drop_white_48dp = 2130837651;
+			public const int ic_launcher = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_playlist_add_check_white_48dp = 2130837652;
+			public const int ic_launcher_actionbar = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_remove_red_eye_white_48dp = 2130837653;
+			public const int ic_launcher_chrome = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_restaurant_white_48dp = 2130837654;
+			public const int ic_launcher_gmail = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int Icon = 2130837655;
+			public const int ic_launcher_gmaps = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int icon_map = 2130837656;
+			public const int ic_launcher_gplus = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int NoFeedingFish = 2130837657;
+			public const int ic_map_white_48dp = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int nothing = 2130837658;
-			
-			// aapt resource value: 0x7f0200a7
-			public const int notification_template_icon_bg = 2130837671;
+			public const int ic_no_feeding_fish = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int places_ic_clear = 2130837659;
+			public const int ic_people_white_48dp = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int places_ic_search = 2130837660;
+			public const int ic_pin_drop_white_48dp = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int powered_by_google_dark = 2130837661;
+			public const int ic_playlist_add_check_white_48dp = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int powered_by_google_light = 2130837662;
+			public const int ic_remove_red_eye_white_48dp = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int psts_background_tab = 2130837663;
+			public const int ic_restaurant_white_48dp = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int RotiCanai = 2130837664;
+			public const int Icon = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int splash_FuzeEcoteer = 2130837665;
+			public const int icon_map = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int splash_screen = 2130837666;
+			public const int NoFeedingFish = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int splashScreen_FuzeEcoteer = 2130837667;
+			public const int nothing = 2130837667;
+			
+			// aapt resource value: 0x7f0200b0
+			public const int notification_template_icon_bg = 2130837680;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int tabs_pattern = 2130837668;
+			public const int places_ic_clear = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int tabs_pattern_diagonal = 2130837669;
+			public const int places_ic_search = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int turtle3 = 2130837670;
+			public const int powered_by_google_dark = 2130837670;
+			
+			// aapt resource value: 0x7f0200a7
+			public const int powered_by_google_light = 2130837671;
+			
+			// aapt resource value: 0x7f0200a8
+			public const int psts_background_tab = 2130837672;
+			
+			// aapt resource value: 0x7f0200a9
+			public const int RotiCanai = 2130837673;
+			
+			// aapt resource value: 0x7f0200aa
+			public const int splash_FuzeEcoteer = 2130837674;
+			
+			// aapt resource value: 0x7f0200ab
+			public const int splash_screen = 2130837675;
+			
+			// aapt resource value: 0x7f0200ac
+			public const int splashScreen_FuzeEcoteer = 2130837676;
+			
+			// aapt resource value: 0x7f0200ad
+			public const int tabs_pattern = 2130837677;
+			
+			// aapt resource value: 0x7f0200ae
+			public const int tabs_pattern_diagonal = 2130837678;
+			
+			// aapt resource value: 0x7f0200af
+			public const int turtle3 = 2130837679;
 			
 			static Drawable()
 			{

@@ -26,7 +26,13 @@ namespace Sample
             items_FD = new List<FD>();
 
 
-            items_FD.Add(new FD() { Image = Resource.Drawable.RotiCanai, Title = "Roti Canai", Description = "Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap" });
+            items_FD.Add(new FD() { Image = Resource.Drawable.food_rotiCanai, Title = "Roti Canai", Description = "A dough of flour, egg, and ghee (clarified butter) is incredibly, almost unbelievably elastic.    It's also served with curry.    other versions are cooked with egg, or onion, or sardines." });
+            items_FD.Add(new FD() { Image = Resource.Drawable.food_chickenCurry, Title = "Chicken Curry", Description = "Malaysian versions tend to start with a rempah, a complex paste of spices and aromatics that's cooked together and forms the base of the curry" });
+            items_FD.Add(new FD() { Image = Resource.Drawable.food_meeGoreng, Title = "Mee Goreng", Description = "Stir-fried noodles, which take many forms. You'll often see yellow noodles quickly wok'd up with soy, garlic, shallots, and chilies; along with them might be shrimp or chicken, beef or vegetables. " });
+            items_FD.Add(new FD() { Image = Resource.Drawable.food_meeRebus, Title = "Mee Rebus", Description = "The yellow mee noodles are doused in a sauce of sweet potato and tomato, cooked (as are so many dishes) with a fried chili-based rempah. It's topped with fried egg, calamansi lime, fried tofu, fried shallots, and bean sprouts." });
+            items_FD.Add(new FD() { Image = Resource.Drawable.food_nasiGoreng, Title = "Nasi Goreng", Description = "Rice stir-fried with chilis and garlic and kecap manis (sweet soy); like mee goreng, it might have chicken or shrimp for a little more substance. " });
+
+
 
             ListViewAdapter_FD adapter = new ListViewAdapter_FD(this.Context, items_FD);
 
@@ -34,3 +40,5 @@ namespace Sample
         }
     }
 }
+
+//items_FD.Add(new FD() { Image = Resource.Drawable, Title = "", Description = "" });
