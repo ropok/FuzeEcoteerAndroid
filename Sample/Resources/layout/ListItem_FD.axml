@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:paddingRight="@dimen/padding_small_listText"
     android:paddingLeft="@dimen/padding_small_listText"
     android:paddingTop="@dimen/padding_MM_explore"
@@ -17,7 +17,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:weightSum="4"
         android:paddingLeft="@dimen/padding_small_listText"
         android:paddingBottom="@dimen/padding_small_listText">
         <TextView
@@ -25,7 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:layout_weight="1"
             android:gravity="center"
             android:id="@+id/inTitle" />
         <TextView
@@ -33,15 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:layout_weight="2"
             android:id="@+id/inDescription" />
-        <TextView
-            android:text="Price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:layout_weight="1"
-            android:gravity="right"
-            android:id="@+id/inPrice" />
     </LinearLayout>
 </LinearLayout>

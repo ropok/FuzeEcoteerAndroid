@@ -53,9 +53,6 @@ namespace Sample
             TextView inDescription = row.FindViewById<TextView>(Resource.Id.inDescription);
             inDescription.Text = mItems[position].Description;
 
-            TextView inPrice = row.FindViewById<TextView>(Resource.Id.inPrice);
-            inPrice.Text = mItems[position].Price;
-
             ImageView inImage = row.FindViewById<ImageView>(Resource.Id.inImage);
             inImage.SetImageResource(mItems[position].Image);
 

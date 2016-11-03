@@ -26,18 +26,7 @@ namespace Sample
             items_FD = new List<FD>();
 
 
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description ="Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
-            items_FD.Add(new FD() { Image = Resource.Drawable.ic_no_feeding_fish, Title = "Roti Canai", Description = "Make Pagi sangat sedap", Price = "RM 1-3" });
+            items_FD.Add(new FD() { Image = Resource.Drawable.RotiCanai, Title = "Roti Canai", Description = "Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap Make Pagi sangat sedap" });
 
             ListViewAdapter_FD adapter = new ListViewAdapter_FD(this.Context, items_FD);
 
