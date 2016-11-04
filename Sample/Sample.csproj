@@ -145,8 +145,10 @@
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_2.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\Fragment_MD_1.cs" />
     <Compile Include="ExploreMenu\6.MalayDict\PagerAdapter_MD.cs" />
+    <Compile Include="HTGH.cs" />
     <Compile Include="FD.cs" />
     <Compile Include="ImageActivity.cs" />
+    <Compile Include="ListViewAdapter_HTGH.cs" />
     <Compile Include="ListViewAdapter_FD.cs" />
     <Compile Include="ListViewAdapter_MD.cs" />
     <Compile Include="MainActivity.cs" />
@@ -284,6 +286,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ListItem_FD.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListItem_HTGH.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -675,6 +680,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\drink_miloAis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bus_JetbusSchedule.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\train_erl_fare_2016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bus_jetbus_EN.jpg" />
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
