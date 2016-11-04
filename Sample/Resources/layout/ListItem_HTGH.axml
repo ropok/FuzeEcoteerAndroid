@@ -42,5 +42,13 @@
             android:textColor="#000000"
             android:gravity="center"
             android:id="@+id/HTGH_Description" />
+      <TextView
+          android:text="Time"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:gravity="center"
+          android:textStyle="italic"
+          android:id="@+id/HTGH_Time" />
     </LinearLayout>
 </LinearLayout>

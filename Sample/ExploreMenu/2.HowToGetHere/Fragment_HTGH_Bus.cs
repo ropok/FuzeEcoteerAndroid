@@ -25,10 +25,10 @@ namespace Sample
 
             items_HTGH = new List<HTGH>();
             items_HTGH.Add(new HTGH() { Title = "Route:\nKLIA/KLIA2 -> TBS -> Kuala Besut -> Pulau Perhentian" });
-            items_HTGH.Add(new HTGH() { Title = "KLIA/KLIA2 -> TBS\n\nBy Bus", Image1 = Resource.Drawable.bus_jetbus_EN, Image2 = Resource.Drawable.bus_JetbusSchedule });
-            items_HTGH.Add(new HTGH() { Title = "By Train", Image1 = Resource.Drawable.train_erl_fare_2016});
-            items_HTGH.Add(new HTGH() { Title = "TBS -> Kuala Besut\n\nBy Bus", Description = "Departure Time (day and night):\n09.30\n09.45\n10.00\n10.30" });
-            items_HTGH.Add(new HTGH() { Title = "Kuala Besut (Jetty) -> Pulau Perhentian\n\nBy Boat", Description = "Departure Time:\n08.00 am\n12.00 pm\n04.00 pm" });
+            items_HTGH.Add(new HTGH() { Title = "KLIA/KLIA2 -> TBS\n\nBy Bus", Image1 = Resource.Drawable.bus_jetbus_EN, Image2 = Resource.Drawable.bus_JetbusSchedule, Time = "estimated : 1 hour 15 minutes" });
+            items_HTGH.Add(new HTGH() { Title = "By Train", Image1 = Resource.Drawable.train_erl_fare_2016, Time = "estimated : less than 1 hour" });
+            items_HTGH.Add(new HTGH() { Title = "TBS -> Kuala Besut\n\nBy Bus", Description = "Departure Time (day and night):\n09.30\n09.45\n10.00\n10.30", Time = "\nestimated : 8 - 10 hours" });
+            items_HTGH.Add(new HTGH() { Title = "Kuala Besut (Jetty) -> Pulau Perhentian\n\nBy Boat", Description = "Departure Time:\n08.00 am\n12.00 pm\n04.00 pm", Time = "\nestimated : 1 hour" });
             ListViewAdapter_HTGH adapter = new ListViewAdapter_HTGH(this.Context, items_HTGH);
 
             ListView_HTGH.Adapter = adapter;

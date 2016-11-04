@@ -60,6 +60,9 @@ namespace Sample
             TextView HTGH_Description = row.FindViewById<TextView>(Resource.Id.HTGH_Description);
             HTGH_Description.Text = mItems[position].Description;
 
+            TextView HTGH_Time = row.FindViewById<TextView>(Resource.Id.HTGH_Time);
+            HTGH_Time.Text = mItems[position].Time;
+
             return row;
         }
     }

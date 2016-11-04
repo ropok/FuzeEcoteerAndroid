@@ -18,6 +18,7 @@ namespace Sample
         public int Image1 { get; set; }
         public int Image2 { get; set; }
         public string Description { get; set; }
+        public string Time { get; set; }
 
     }
 }
