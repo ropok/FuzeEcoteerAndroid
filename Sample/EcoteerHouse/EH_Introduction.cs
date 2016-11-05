@@ -61,7 +61,18 @@ namespace Sample
             ListViewAdapter_FD adapter = new ListViewAdapter_FD(this, items_EH);
 
             ListView_EH.Adapter = adapter;
+
+            var EH_moreInfo = FindViewById<LinearLayout>(Resource.Id.EH_moreInfo);
+
+            EH_moreInfo.Click += EH_moreInfo_Click;
             
+        }
+
+        private void EH_moreInfo_Click(object sender, EventArgs e)
+        {
+            var uri = Android.Net.Uri.Parse("http://ecoteerresponsibletravel.com/about-ecoteer/");
+            var intent = new Intent(Intent.ActionView, uri);
+            StartActivity(intent);
         }
     }
 }

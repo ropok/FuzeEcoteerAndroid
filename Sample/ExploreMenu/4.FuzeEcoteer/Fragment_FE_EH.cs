@@ -28,8 +28,20 @@ namespace Sample
             var menuEH_moreInfo = Activity.FindViewById<LinearLayout>(Resource.Id.FE_4);
             
             menuEH_Introduction.Click += MenuEH_Introduction_Click;
+            menuEH_Projects.Click += MenuEH_Projects_Click;
+            menuEH_Activities.Click += MenuEH_Activities_Click;
             menuEH_moreInfo.Click += MenuEH_moreInfo_Click;
             #endregion
+        }
+
+        private void MenuEH_Activities_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this.Context, typeof(EH_Activities)));
+        }
+
+        private void MenuEH_Projects_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this.Context, typeof(EH_Projects)));
         }
 
         // Opening Browser App

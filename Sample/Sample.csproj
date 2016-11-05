@@ -110,6 +110,8 @@
     <Compile Include="activity_Report.cs" />
     <Compile Include="activity_ReportCamera.cs" />
     <Compile Include="BitmapHelpers.cs" />
+    <Compile Include="EcoteerHouse\EH_Activities.cs" />
+    <Compile Include="EcoteerHouse\EH_Projects.cs" />
     <Compile Include="EcoteerHouse\EH_Introduction.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Explore.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Home.cs" />
@@ -293,6 +295,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\EH_Introduction.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\EH_Projects.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\EH_Activities.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -694,7 +702,36 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\bus_jetbus_EN.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Projects_1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Projects_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Projects_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Projects_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Act_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Act_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Act_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Act_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Act_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EH_Act_5.jpg" />
+  </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
