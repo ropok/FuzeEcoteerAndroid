@@ -110,6 +110,7 @@
     <Compile Include="activity_Report.cs" />
     <Compile Include="activity_ReportCamera.cs" />
     <Compile Include="BitmapHelpers.cs" />
+    <Compile Include="EcoteerHouse\EH_Introduction.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Explore.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Home.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Map.cs" />
@@ -289,6 +290,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ListItem_HTGH.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\EH_Introduction.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -690,6 +694,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\bus_jetbus_EN.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
