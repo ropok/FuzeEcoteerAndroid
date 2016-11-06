@@ -110,9 +110,10 @@
     <Compile Include="activity_Report.cs" />
     <Compile Include="activity_ReportCamera.cs" />
     <Compile Include="BitmapHelpers.cs" />
-    <Compile Include="EcoteerHouse\EH_Activities.cs" />
-    <Compile Include="EcoteerHouse\EH_Projects.cs" />
-    <Compile Include="EcoteerHouse\EH_Introduction.cs" />
+    <Compile Include="_PerhentianTurtleProject\PTP_SubmitTurtlePhotos.cs" />
+    <Compile Include="_EcoteerHouse\EH_Activities.cs" />
+    <Compile Include="_EcoteerHouse\EH_Projects.cs" />
+    <Compile Include="_EcoteerHouse\EH_Introduction.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Explore.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Home.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Map.cs" />
@@ -301,6 +302,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\EH_Activities.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PTP_SubmitTurtlePhotos.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -731,6 +735,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\EH_Act_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SubmitTurtlePhotos.jpg" />
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
