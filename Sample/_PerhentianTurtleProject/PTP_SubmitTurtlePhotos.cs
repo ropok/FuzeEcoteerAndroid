@@ -15,8 +15,8 @@ using Android.Content;
 */
 namespace Sample
 {
-    [Activity(Label = "PTP - Submit Turtle Photos", ParentActivity = typeof(Fragment_FE_PTP))]
-    [MetaData("android.support.PARENT_ACTIVITY", Value = "Fragment_FE_PTP")]
+    [Activity(Label = "PTP - Submit Turtle Photos", ParentActivity = typeof(activity_FuzeEcoteer))]
+    [MetaData("android.support.PARENT_ACTIVITY", Value = "activity_FuzeEcoteer")]
     public class PTP_SubmitTurtlePhotos : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
