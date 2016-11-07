@@ -109,7 +109,7 @@
                             android:id="@+id/ImageTurtle3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/Turtle3"
+                            android:src="@drawable/ic_public_white_48dp"
                             android:layout_centerVertical="true" />
                         <TextView
                             android:layout_below="@id/ImageTurtle3"

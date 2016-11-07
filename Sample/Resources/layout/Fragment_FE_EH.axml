@@ -109,11 +109,11 @@
                             android:id="@+id/FE4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_fingerprint_white_48dp"
+                            android:src="@drawable/ic_public_white_48dp"
                             android:layout_centerVertical="true" />
                         <TextView
                             android:layout_below="@id/FE4"
-                            android:text="More Information : \n(http://ecoteerresponsibletravel.com/)"
+                            android:text="More Information : \n(ecoteerresponsibletravel.com)"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"

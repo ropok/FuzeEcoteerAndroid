@@ -4,100 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_margin="8dp"
-      card_view:cardBackgroundColor="@android:color/white"
-      card_view:cardCornerRadius="8dp">
-    <LinearLayout
-        android:id="@+id/Menu_Diving"
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-      <ScrollView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-        <!-- START [Menu Diving] -->
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="8dp">
         <LinearLayout
+            android:id="@+id/Menu_Diving"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-          <!-- Dive1 - Introduction -->
-          <LinearLayout
-              android:id="@+id/Dive_1"
-              android:background="@color/DarkBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_FE_EH"
-              android:paddingBottom="@dimen/padding_FE_EH">
-            <ImageView
-                android:id="@+id/Dive1"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/diving_flag"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/Dive1"
-                android:text="Introduction"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
-          <!-- Dive2 - Map -->
-          <LinearLayout
-              android:id="@+id/Dive_2"
-              android:background="@color/DarkerBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_FE_EH"
-              android:paddingBottom="@dimen/padding_FE_EH">
-            <ImageView
-                android:id="@+id/Dive2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/diving_flag"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/Dive2"
-                android:text="Map"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
-          <!-- Dive3 - Projects -->
-          <LinearLayout
-              android:id="@+id/Dive_3"
-              android:background="@color/DarkBlue"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:clickable="true"
-              android:orientation="vertical"
-              android:paddingTop="@dimen/padding_FE_EH"
-              android:paddingBottom="@dimen/padding_FE_EH">
-            <ImageView
-                android:id="@+id/Dive3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/diving_flag"
-                android:layout_centerVertical="true" />
-            <TextView
-                android:layout_below="@id/Dive3"
-                android:text="Projects"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#000000" />
-          </LinearLayout>
+                android:layout_height="wrap_content">
+            <!-- START [Menu Diving] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <!-- Dive1 - Introduction -->
+                    <LinearLayout
+                        android:id="@+id/Dive_1"
+                        android:background="@color/DarkBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_FE_EH"
+                        android:paddingBottom="@dimen/padding_FE_EH">
+                        <ImageView
+                            android:id="@+id/Dive1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/diving_flag"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/Dive1"
+                            android:text="Introduction\n(Blue Temple Conservation)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                <!-- Dive2 - Map -->
+                    <LinearLayout
+                        android:id="@+id/Dive_2"
+                        android:background="@color/DarkerBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_FE_EH"
+                        android:paddingBottom="@dimen/padding_FE_EH">
+                        <ImageView
+                            android:id="@+id/Dive2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/diving_flag"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/Dive2"
+                            android:text="Map"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                <!-- Dive3 - Projects -->
+                    <LinearLayout
+                        android:id="@+id/Dive_3"
+                        android:background="@color/DarkBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_FE_EH"
+                        android:paddingBottom="@dimen/padding_FE_EH">
+                        <ImageView
+                            android:id="@+id/Dive3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/diving_flag"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/Dive3"
+                            android:text="Projects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                <!-- FE4 - More Information -->
+                    <LinearLayout
+                        android:id="@+id/Dive_4"
+                        android:background="@color/DarkerBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/padding_FE_EH"
+                        android:paddingBottom="@dimen/padding_FE_EH">
+                        <ImageView
+                            android:id="@+id/Dive4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_public_white_48dp"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_below="@id/Dive4"
+                            android:text="More Information : \n(Blue Temple Conservation)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            <!-- END [Menu Diving] -->
+            </ScrollView>
         </LinearLayout>
-        <!-- END [Menu Diving] -->
-      </ScrollView>
-    </LinearLayout>
-  </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
 </FrameLayout>

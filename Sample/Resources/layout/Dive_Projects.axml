@@ -7,11 +7,11 @@
     android:fitsSystemWindows="true"
     android:background="?attr/colorPrimary">
     <include
-        android:id="@+id/toolbarEH_Introduction"
+        android:id="@+id/toolbarDive_Projects"
         layout="@layout/toolbar"
         android:background="?attr/colorPrimary" />
     <LinearLayout
-        android:id="@+id/EH_moreInfo"
+        android:id="@+id/Dive_Projects_moreInfo"
         android:background="@color/DarkerBlue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,6 +34,6 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/ListView_EH_Introduction" />
+            android:id="@+id/ListView_Dive_Projects" />
     </android.support.v7.widget.CardView>
 </LinearLayout>
