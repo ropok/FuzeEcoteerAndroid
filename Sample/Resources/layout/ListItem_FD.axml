@@ -34,5 +34,13 @@
             android:layout_height="wrap_content"
             android:textColor="#000000"
             android:id="@+id/inDescription" />
+        <TextView
+            android:text="manyMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:id="@+id/inManyMore" />
     </LinearLayout>
 </LinearLayout>

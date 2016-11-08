@@ -17,6 +17,7 @@ namespace Sample
         public string Title { get; set; }
         public string Description { get; set; }
         public int Image { get; set; }
-        
+        public string manyMore { get; set; }
+
     }
 }

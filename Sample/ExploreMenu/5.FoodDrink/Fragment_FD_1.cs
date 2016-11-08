@@ -31,6 +31,7 @@ namespace Sample
             items_FD.Add(new FD() { Image = Resource.Drawable.food_meeGoreng, Title = "Mee Goreng", Description = "Stir-fried noodles, which take many forms. You'll often see yellow noodles quickly wok'd up with soy, garlic, shallots, and chilies; along with them might be shrimp or chicken, beef or vegetables. " });
             items_FD.Add(new FD() { Image = Resource.Drawable.food_meeRebus, Title = "Mee Rebus", Description = "The yellow mee noodles are doused in a sauce of sweet potato and tomato, cooked (as are so many dishes) with a fried chili-based rempah. It's topped with fried egg, calamansi lime, fried tofu, fried shallots, and bean sprouts." });
             items_FD.Add(new FD() { Image = Resource.Drawable.food_nasiGoreng, Title = "Nasi Goreng", Description = "Rice stir-fried with chilis and garlic and kecap manis (sweet soy); like mee goreng, it might have chicken or shrimp for a little more substance. " });
+            items_FD.Add(new FD() { manyMore = "Many More !" });
 
 
 

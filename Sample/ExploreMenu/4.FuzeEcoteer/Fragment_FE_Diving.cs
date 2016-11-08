@@ -1,5 +1,6 @@
 using Android.Content;
 using Android.OS;
+using Android.Support.V4.App;
 using Android.Views;
 using Android.Widget;
 
@@ -22,12 +23,12 @@ namespace Sample
 
             #region buttonMenu
             var menuDive_Introduction = Activity.FindViewById<LinearLayout>(Resource.Id.Dive_1);
-            var menuDive_Map = Activity.FindViewById<LinearLayout>(Resource.Id.Dive_2);
+            //var menuDive_Map = Activity.FindViewById<LinearLayout>(Resource.Id.Dive_2);
             var menuDive_Projects = Activity.FindViewById<LinearLayout>(Resource.Id.Dive_3);
             var menuDive_moreInfo = Activity.FindViewById<LinearLayout>(Resource.Id.Dive_4);
 
             menuDive_Introduction.Click += MenuDive_Introduction_Click;
-            menuDive_Map.Click += MenuDive_Map_Click;
+            //menuDive_Map.Click += MenuDive_Map_Click;
             menuDive_Projects.Click += MenuDive_Projects_Click;
             menuDive_moreInfo.Click += MenuDive_moreInfo_Click;
             #endregion
@@ -45,11 +46,12 @@ namespace Sample
             StartActivity(new Intent(this.Context, typeof(Dive_Projects)));
         }
 
-        private void MenuDive_Map_Click(object sender, System.EventArgs e)
-        {
+        //private void MenuDive_Map_Click(object sender, System.EventArgs e)
+        //{
 
-            throw new System.NotImplementedException();
-        }
+        //    Fragment fragment = new Fragment_MM_Map();
+            
+        //}
 
         private void MenuDive_Introduction_Click(object sender, System.EventArgs e)
         {

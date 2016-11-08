@@ -77,11 +77,6 @@ namespace Sample
             var intent = new Intent(Intent.ActionView, uri);
             StartActivity(intent);
         }
-
-
-        //protected override void OnDestroy()
-        //{
-        //    base.OnDestroy();
-        //}
+        
     }
 }

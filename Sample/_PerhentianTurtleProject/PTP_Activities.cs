@@ -62,6 +62,7 @@ namespace Sample
             var intent = new Intent(Intent.ActionView, uri);
             StartActivity(intent);
         }
+        
 
     }
 }

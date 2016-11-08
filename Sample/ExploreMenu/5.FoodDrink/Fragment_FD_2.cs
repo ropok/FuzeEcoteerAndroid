@@ -27,6 +27,7 @@ namespace Sample
             items_FD.Add(new FD() { Image = Resource.Drawable.drink_miloAis, Title = "Milo Ais", Description = "This drink is basically made using a mixture of Milo and sweetened condensed milk. Milo Ais tastes like hot chocolate served with ice cubes." });
             items_FD.Add(new FD() { Image = Resource.Drawable.drink_Neslo, Title = "Neslo", Description = "This cold drink is a mixture of Nescafé and Milo (similar to Nesquik chocolate mix for Americans), and tastes like a watered-down iced mocha." });
             items_FD.Add(new FD() { Image = Resource.Drawable.drink_tehTarik, Title = "Teh Tarik", Description = "A good cup of teh tarik is strong, brisk, and creamy so when you drink it, your mouth registers a full-bodied feel with a potent kick of sweetness. Teh tarik is more than just a cup of tea mixed with condensed milk; it is almost revered as a culture." });
+            items_FD.Add(new FD() { manyMore = "Many More !" });
             ListViewAdapter_FD adapter = new ListViewAdapter_FD(this.Context, items_FD);
 
             ListView_FD.Adapter = adapter;

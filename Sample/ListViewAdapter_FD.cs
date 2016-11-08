@@ -56,6 +56,9 @@ namespace Sample
             ImageView inImage = row.FindViewById<ImageView>(Resource.Id.inImage);
             inImage.SetImageResource(mItems[position].Image);
 
+            TextView inManyMore = row.FindViewById<TextView>(Resource.Id.inManyMore);
+            inManyMore.Text = mItems[position].manyMore;
+
             return row;
         }
     }
