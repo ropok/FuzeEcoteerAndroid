@@ -4,21 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@+id/CW1_moreInfo"
-        android:background="@color/DarkerBlue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="for more information click here"
-            android:textColor="#ffffff"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp" />
-    </LinearLayout>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,6 +13,6 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/ListView_CW1" />
+            android:id="@+id/ListView_CW4" />
     </android.support.v7.widget.CardView>
 </FrameLayout>

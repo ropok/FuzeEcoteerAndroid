@@ -33,6 +33,10 @@ namespace Sample
                 case 1:
                     return new Fragment_CW_2();
                 case 2:
+                    return new Fragment_CW_3();
+                case 3:
+                    return new Fragment_CW_4();
+                case 4:
                 default:
                     return new Fragment_CW_1();
             }

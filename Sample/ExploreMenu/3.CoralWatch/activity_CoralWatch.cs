@@ -28,8 +28,10 @@ namespace Sample
 
             string[] titles = new string[]
             {
-                "CW1",
-                "CW2"
+                "Introduction",
+                "Data Collection",
+                "Notes",
+                "Coral Types"
             };
             var adapter = new PagerAdapter_CW(SupportFragmentManager, titles);
             pager.Adapter = adapter;

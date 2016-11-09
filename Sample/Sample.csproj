@@ -119,6 +119,8 @@
     <Compile Include="activity_Report.cs" />
     <Compile Include="activity_ReportCamera.cs" />
     <Compile Include="BitmapHelpers.cs" />
+    <Compile Include="ExploreMenu\3.CoralWatch\Fragment_CW_3.cs" />
+    <Compile Include="ExploreMenu\3.CoralWatch\Fragment_CW_4.cs" />
     <Compile Include="_Diving\Dive_Projects.cs" />
     <Compile Include="_Diving\Dive_Introduction.cs" />
     <Compile Include="_LocalWildlife\activity_LW.cs" />
@@ -335,6 +337,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_LW.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_CW_3.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_CW_4.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -876,6 +884,39 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\WL_ML_HawksBillTurtle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW1_whatIs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral1_SoftCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral2_BranchingCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral3_BrainCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral4_PlateCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral5_BoulderCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral6_BoulderCoral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral7_BoulderCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_Coral8_BranchingCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_type1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CW4_type2.png" />
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
