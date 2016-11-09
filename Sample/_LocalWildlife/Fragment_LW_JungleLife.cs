@@ -27,42 +27,42 @@ namespace Sample
 
 
             items_LW.Add(new FD() {
-                //Image = Resource.Drawable.RotiCanai,
+                Image = Resource.Drawable.WL_JL_Lizard,
                 Title = "Moniter Lizards",
                 Description = "Live all over both islands including the village."
             });
 
             items_LW.Add(new FD()
             {
-                //Image = Resource.Drawable.RotiCanai,
+                Image = Resource.Drawable.WL_JL_Python,
                 Title = "Reticulated Pythons",
                 Description = "Grow Up to 6.5m in length, these giants live deep in the forest of both islands."
             });
 
             items_LW.Add(new FD()
             {
-                //Image = Resource.Drawable.RotiCanai,
+                Image = Resource.Drawable.WL_JL_Eagle,
                 Title = "White Bellied Eagles",
                 Description = "Is distinguished by its white head and breast. These can sometimes be seen hunting fish in the sea surrounding the islands."
             });
 
             items_LW.Add(new FD()
             {
-                //Image = Resource.Drawable.RotiCanai,
+                Image = Resource.Drawable.WL_JL_DLMonkey,
                 Title = "Dusky leaf monkeys",
                 Description = "Live on the big island. Dwelling in tall trees deep in the forest, feeding on shoots and seedlings."
             });
 
             items_LW.Add(new FD()
             {
-                //Image = Resource.Drawable.RotiCanai,
+                Image = Resource.Drawable.WL_JL_Tokay,
                 Title = "Tokay Gecko",
                 Description = "Is a large Gecko (up to 35cms) whose call you will hear all over the islands."
             });
 
             items_LW.Add(new FD()
             {
-                //Image = Resource.Drawable.RotiCanai,
+                Image = Resource.Drawable.WL_JL_FlyLemur,
                 Title = "Flying Lemurs",
                 Description = "Are found on both islands, they can glide up to 120m."
             });

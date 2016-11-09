@@ -3710,112 +3710,151 @@ namespace Sample
 			public const int ic_people_white_48dp = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_pin_drop_white_48dp = 2130837674;
+			public const int ic_pets_white_48dp = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_playlist_add_check_white_48dp = 2130837675;
+			public const int ic_pin_drop_white_48dp = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_public_white_48dp = 2130837676;
+			public const int ic_playlist_add_check_white_48dp = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_remove_red_eye_white_48dp = 2130837677;
+			public const int ic_public_white_48dp = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_restaurant_white_48dp = 2130837678;
+			public const int ic_remove_red_eye_white_48dp = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int Icon = 2130837679;
+			public const int ic_restaurant_white_48dp = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int icon_facebook = 2130837680;
+			public const int Icon = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int icon_instagram = 2130837681;
+			public const int icon_facebook = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int icon_map = 2130837682;
+			public const int icon_instagram = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int No_Feeding_Fish = 2130837683;
+			public const int icon_map = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int No_Littering = 2130837684;
+			public const int No_Feeding_Fish = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int No_Stepping_on_Coral = 2130837685;
+			public const int No_Littering = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int No_Touching_or_Chasing_Marine_Life = 2130837686;
+			public const int No_Stepping_on_Coral = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int NoFeedingFish = 2130837687;
+			public const int No_Touching_or_Chasing_Marine_Life = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int nothing = 2130837688;
-			
-			// aapt resource value: 0x7f0200cd
-			public const int notification_template_icon_bg = 2130837709;
+			public const int NoFeedingFish = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int places_ic_clear = 2130837689;
+			public const int nothing = 2130837689;
+			
+			// aapt resource value: 0x7f0200da
+			public const int notification_template_icon_bg = 2130837722;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int places_ic_search = 2130837690;
+			public const int places_ic_clear = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int powered_by_google_dark = 2130837691;
+			public const int places_ic_search = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int powered_by_google_light = 2130837692;
+			public const int powered_by_google_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int psts_background_tab = 2130837693;
+			public const int powered_by_google_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int PTP_act_1 = 2130837694;
+			public const int psts_background_tab = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int PTP_Act_2 = 2130837695;
+			public const int PTP_act_1 = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int PTP_act_3 = 2130837696;
+			public const int PTP_Act_2 = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int PTP_act_4 = 2130837697;
+			public const int PTP_act_3 = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int PTP_intro_1 = 2130837698;
+			public const int PTP_act_4 = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int RotiCanai = 2130837699;
+			public const int PTP_intro_1 = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int splash_FuzeEcoteer = 2130837700;
+			public const int RotiCanai = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int splash_screen = 2130837701;
+			public const int splash_FuzeEcoteer = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int splashScreen_FuzeEcoteer = 2130837702;
+			public const int splash_screen = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int SubmitTurtlePhotos = 2130837703;
+			public const int splashScreen_FuzeEcoteer = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int tabs_pattern = 2130837704;
+			public const int SubmitTurtlePhotos = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int tabs_pattern_diagonal = 2130837705;
+			public const int tabs_pattern = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int train_erl_fare_2016 = 2130837706;
+			public const int tabs_pattern_diagonal = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int turtle3 = 2130837707;
+			public const int train_erl_fare_2016 = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int wear_lifeJacket = 2130837708;
+			public const int turtle3 = 2130837708;
+			
+			// aapt resource value: 0x7f0200cd
+			public const int wear_lifeJacket = 2130837709;
+			
+			// aapt resource value: 0x7f0200ce
+			public const int WL_JL_DLMonkey = 2130837710;
+			
+			// aapt resource value: 0x7f0200cf
+			public const int WL_JL_Eagle = 2130837711;
+			
+			// aapt resource value: 0x7f0200d0
+			public const int WL_JL_FlyLemur = 2130837712;
+			
+			// aapt resource value: 0x7f0200d1
+			public const int WL_JL_Lizard = 2130837713;
+			
+			// aapt resource value: 0x7f0200d2
+			public const int WL_JL_Python = 2130837714;
+			
+			// aapt resource value: 0x7f0200d3
+			public const int WL_JL_Tokay = 2130837715;
+			
+			// aapt resource value: 0x7f0200d4
+			public const int WL_ML_BlackTipReefSharks = 2130837716;
+			
+			// aapt resource value: 0x7f0200d5
+			public const int WL_ML_HawksBillTurtle = 2130837717;
+			
+			// aapt resource value: 0x7f0200d6
+			public const int WL_ML_PufferFish = 2130837718;
+			
+			// aapt resource value: 0x7f0200d7
+			public const int WL_ML_Stingrays = 2130837719;
+			
+			// aapt resource value: 0x7f0200d8
+			public const int WL_ML_TriggerFish = 2130837720;
+			
+			// aapt resource value: 0x7f0200d9
+			public const int WL_ML_Turtle = 2130837721;
 			
 			static Drawable()
 			{
