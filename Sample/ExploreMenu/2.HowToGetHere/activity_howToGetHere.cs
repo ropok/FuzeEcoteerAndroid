@@ -31,8 +31,6 @@ namespace Sample
             {
                 "Bus",
                 "Flight",
-                "Train",
-                "Others"
             };
             var adapter = new PagerAdapter_HTGH(SupportFragmentManager, titles);
             pager.Adapter = adapter;

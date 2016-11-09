@@ -4,11 +4,11 @@ using Java.Lang;
 
 namespace Sample
 {
-    public class PagerAdapter_MPR : FragmentPagerAdapter
+    public class PagerAdapter_LW : FragmentPagerAdapter
     {
         private string[] Titles;
-        
-        public PagerAdapter_MPR(FragmentManager fm, string[] titles) : base(fm)
+
+        public PagerAdapter_LW(FragmentManager fm, string[] titles) : base(fm)
         {
             Titles = titles;
         }
@@ -25,19 +25,19 @@ namespace Sample
                 return Titles.Length;
             }
         }
-
         public override Fragment GetItem(int position)
         {
             switch (position)
             {
                 case 0:
-                    return new Fragment_MPR_Rules();
+                    return new Fragment_LW_JungleLife();
                 case 1:
-                    return new Fragment_MPR_Eco();
+                    return new Fragment_LW_MarineLife();
                 case 2:
                 default:
-                    return new Fragment_MPR_Rules();
+                    return new Fragment_LW_JungleLife();
             }
         }
+
     }
 }

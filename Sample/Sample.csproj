@@ -121,6 +121,8 @@
     <Compile Include="BitmapHelpers.cs" />
     <Compile Include="_Diving\Dive_Projects.cs" />
     <Compile Include="_Diving\Dive_Introduction.cs" />
+    <Compile Include="_LocalWildlife\activity_LW.cs" />
+    <Compile Include="_LocalWildlife\PagerAdapter_LW.cs" />
     <Compile Include="_PerhentianTurtleProject\PTP_Activities.cs" />
     <Compile Include="_PerhentianTurtleProject\PTP_Introduction.cs" />
     <Compile Include="_PerhentianTurtleProject\PTP_SubmitTurtlePhotos.cs" />
@@ -139,8 +141,8 @@
     <Compile Include="ExploreMenu\2.HowToGetHere\PagerAdapter_HTGH.cs" />
     <Compile Include="ExploreMenu\1.MarineParkRules\activity_MarineParkRules.cs" />
     <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_Eco.cs" />
-    <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_JungleLife.cs" />
-    <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_MarineLife.cs" />
+    <Compile Include="_LocalWildlife\Fragment_LW_JungleLife.cs" />
+    <Compile Include="_LocalWildlife\Fragment_LW_MarineLife.cs" />
     <Compile Include="ExploreMenu\1.MarineParkRules\Fragment_MPR_Rules.cs" />
     <Compile Include="ExploreMenu\3.CoralWatch\activity_CoralWatch.cs" />
     <Compile Include="ExploreMenu\3.CoralWatch\Fragment_CW_1.cs" />
@@ -212,10 +214,10 @@
     <AndroidResource Include="Resources\layout\Fragment_MPR_Eco.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Fragment_MPR_MarineLife.axml">
+    <AndroidResource Include="Resources\layout\Fragment_LW_MarineLife.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Fragment_MPR_JungleLife.axml">
+    <AndroidResource Include="Resources\layout\Fragment_LW_JungleLife.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_howToGetHere.axml">
@@ -330,6 +332,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Dive_Projects.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_LW.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -34,10 +34,6 @@ namespace Sample
                 case 1:
                     return new Fragment_HTGH_Flight();
                 case 2:
-                    return new Fragment_HTGH_Train();
-                case 3:
-                    return new Fragment_HTGH_Other();
-                case 4:
                 default:
                     return new Fragment_HTGH_Bus();
             }
