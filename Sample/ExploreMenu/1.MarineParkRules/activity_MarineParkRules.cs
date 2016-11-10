@@ -30,7 +30,7 @@ namespace Sample
 
             string[] titles = new string[]
             {
-                "Rules",
+                "Coral Etiquette",
                 "Eco Snorkel Guide",
             };
             var adapter = new PagerAdapter_MPR(SupportFragmentManager, titles);

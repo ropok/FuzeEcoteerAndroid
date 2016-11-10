@@ -10,6 +10,21 @@
         android:id="@+id/toolbarCW"
         layout="@layout/toolbar"
         android:background="?attr/colorPrimary" />
+    <LinearLayout
+        android:id="@+id/CW1_moreInfo"
+        android:background="@color/DarkerBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="for more information click here"
+            android:textColor="#ffffff"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
 <!-- slidingTab -->
     <com.refractored.PagerSlidingTabStrip
         android:id="@+id/tabsCW"
