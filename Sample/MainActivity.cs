@@ -104,6 +104,23 @@ namespace Sample
             return base.OnCreateOptionsMenu(menu);
         }
 
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            // Handle presses on the action bar items
+            switch (item.ItemId)
+            {
+
+                case Resource.Id.action_icons:
+
+                    var intent = new Intent(this, typeof(MM_Info));
+                    StartActivity(intent);
+                    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
+        }
+
         #region colour
         private void ChangeColor(Color newColor)
         {

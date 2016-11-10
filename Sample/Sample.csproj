@@ -119,6 +119,7 @@
     <Compile Include="activity_Report.cs" />
     <Compile Include="activity_ReportCamera.cs" />
     <Compile Include="BitmapHelpers.cs" />
+    <Compile Include="ExploreMenu\0.MainMenu\MM_Info.cs" />
     <Compile Include="ExploreMenu\3.CoralWatch\Fragment_CW_3.cs" />
     <Compile Include="ExploreMenu\3.CoralWatch\Fragment_CW_4.cs" />
     <Compile Include="_Diving\Dive_Projects.cs" />
@@ -343,6 +344,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Fragment_CW_4.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MM_Info.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
