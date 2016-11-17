@@ -26,14 +26,12 @@ namespace Sample
             var menuE_MarineParkRules = Activity.FindViewById<LinearLayout>(Resource.Id.ExploreMarineParkRules);
             var menuE_HowToGetHere = Activity.FindViewById<LinearLayout>(Resource.Id.ExploreHowToGetHere);
             var menuE_CoralWatch = Activity.FindViewById<LinearLayout>(Resource.Id.ExploreCoralWatch);
-            var menuE_FuzeEcoteer = Activity.FindViewById<LinearLayout>(Resource.Id.ExploreFuzeEcoteer);
             var menuE_FoodAndDrink = Activity.FindViewById<LinearLayout>(Resource.Id.ExploreFoodAndDrink);
             var menuE_MalayDictionary = Activity.FindViewById<LinearLayout>(Resource.Id.ExploreMalayDictionary);
 
             menuE_MarineParkRules.Click += MenuE_MarineParkRules_Click;
             menuE_HowToGetHere.Click += MenuE_HowToGetHere_Click;
             menuE_CoralWatch.Click += MenuE_CoralWatch_Click;
-            menuE_FuzeEcoteer.Click += MenuE_FuzeEcoteer_Click;
             menuE_FoodAndDrink.Click += MenuE_FoodAndDrink_Click;
             menuE_MalayDictionary.Click += MenuE_MalayDictionary_Click;
             #endregion
@@ -48,11 +46,7 @@ namespace Sample
         {
             StartActivity(new Intent(this.Context, typeof(activity_FoodDrink)));
         }
-
-        private void MenuE_FuzeEcoteer_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this.Context, typeof(activity_FuzeEcoteer)));
-        }
+        
 
         private void MenuE_CoralWatch_Click(object sender, EventArgs e)
         {
