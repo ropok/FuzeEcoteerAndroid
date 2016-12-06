@@ -17,7 +17,7 @@ using Android.Content;
 
 namespace Sample
 {
-    [Activity(Label = "Fuze Ecoteer", Icon = "@drawable/icon")]
+    [Activity(Label = "Marine Park Awareness App", Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
         private int count = 1;
@@ -30,7 +30,7 @@ namespace Sample
 
         protected override void OnCreate(Bundle bundle)
         {
-            
+
             base.OnCreate(bundle);
 
             SetContentView(Resource.Layout.activity_mainMenu);
@@ -39,7 +39,7 @@ namespace Sample
             tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabsMainMenu);
             pager.PageMargin = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
             pager.CurrentItem = 0;
-                        
+
             adapter = new MyIconPagerAdapter(SupportFragmentManager);
             pager.Adapter = adapter;
             tabs.SetViewPager(pager);
@@ -55,6 +55,7 @@ namespace Sample
             private readonly int[] titles =
          {
             Resource.Drawable.ic_home_white_48dp,
+            Resource.Drawable.ic_pets_white_48dp,
             Resource.Drawable.ic_map_white_48dp,
             Resource.Drawable.ic_explore_white_48dp
          };
@@ -74,10 +75,12 @@ namespace Sample
                     case 0:
                         return new Fragment_MM_Home();
                     case 1:
-                        return new Fragment_MM_Map();
+                        return new Fragment_MM_LocalWildlife();
                     case 2:
-                        return new Fragment_MM_Explore();
+                        return new Fragment_MM_Map();
                     case 3:
+                        return new Fragment_MM_Explore();
+                    case 4:
                     default:
                         return new Fragment_MM_Home();
                 }

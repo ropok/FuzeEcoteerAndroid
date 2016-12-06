@@ -135,7 +135,7 @@
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Explore.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Home.cs" />
     <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Map.cs" />
-    <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_Report.cs" />
+    <Compile Include="ExploreMenu\0.MainMenu\Fragment_MM_LocalWildlife.cs" />
     <Compile Include="ExploreMenu\2.HowToGetHere\activity_howToGetHere.cs" />
     <Compile Include="ExploreMenu\2.HowToGetHere\Fragment_HTGH_Bus.cs" />
     <Compile Include="ExploreMenu\2.HowToGetHere\Fragment_HTGH_Flight.cs" />
@@ -954,6 +954,60 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\CE_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splashScreen_FuzeEcoteer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_LongTailMacaque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_pitviper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_whiteEagle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_PacificReefEgret.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_wihteRumpedSharma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_CloudedLizard.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_BlueSpottedStingray.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_NeedleFish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_GiantMorayEel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_BumpheadParrotFish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_Clownfish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_greatBarracuda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_HardCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_TreeCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_rockCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_SoftCoral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\WL_SpongeCoral.jpg" />
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

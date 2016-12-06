@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Sample
 {
-    [Activity(Label = "Fuze Ecoteer", Icon = "@drawable/splash_FuzeEcoteer", Theme = "@style/AppTheme.Splash", MainLauncher = true, NoHistory = true)]
+    [Activity(Label = "Marine Park Awareness App", Icon = "@drawable/splash_FuzeEcoteer", Theme = "@style/AppTheme.Splash", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)

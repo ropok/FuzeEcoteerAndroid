@@ -3823,8 +3823,8 @@ namespace Sample
 			// aapt resource value: 0x7f0200cf
 			public const int nothing = 2130837711;
 			
-			// aapt resource value: 0x7f0200f0
-			public const int notification_template_icon_bg = 2130837744;
+			// aapt resource value: 0x7f020102
+			public const int notification_template_icon_bg = 2130837762;
 			
 			// aapt resource value: 0x7f0200d0
 			public const int places_ic_clear = 2130837712;
@@ -3869,58 +3869,112 @@ namespace Sample
 			public const int splashScreen_FuzeEcoteer = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int SubmitTurtlePhotos_HQ = 2130837726;
+			public const int splashScreen_FuzeEcoteer2 = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int tabs_pattern = 2130837727;
+			public const int SubmitTurtlePhotos_HQ = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int tabs_pattern_diagonal = 2130837728;
+			public const int tabs_pattern = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int train_erl_fare_2016 = 2130837729;
+			public const int tabs_pattern_diagonal = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int turtle3 = 2130837730;
+			public const int train_erl_fare_2016 = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int wear_lifeJacket = 2130837731;
+			public const int turtle3 = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int WL_JL_DLMonkey = 2130837732;
+			public const int wear_lifeJacket = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int WL_JL_Eagle = 2130837733;
+			public const int WL_BlueSpottedStingray = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int WL_JL_FlyLemur = 2130837734;
+			public const int WL_BumpheadParrotFish = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int WL_JL_Lizard = 2130837735;
+			public const int WL_CloudedLizard = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int WL_JL_Python = 2130837736;
+			public const int WL_Clownfish = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int WL_JL_Tokay = 2130837737;
+			public const int WL_GiantMorayEel = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int WL_ML_BlackTipReefSharks = 2130837738;
+			public const int WL_greatBarracuda = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int WL_ML_HawksBillTurtle = 2130837739;
+			public const int WL_HardCoral = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int WL_ML_PufferFish = 2130837740;
+			public const int WL_JL_DLMonkey = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int WL_ML_Stingrays = 2130837741;
+			public const int WL_JL_Eagle = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int WL_ML_TriggerFish = 2130837742;
+			public const int WL_JL_FlyLemur = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int WL_ML_Turtle = 2130837743;
+			public const int WL_JL_Lizard = 2130837743;
+			
+			// aapt resource value: 0x7f0200f0
+			public const int WL_JL_Python = 2130837744;
+			
+			// aapt resource value: 0x7f0200f1
+			public const int WL_JL_Tokay = 2130837745;
+			
+			// aapt resource value: 0x7f0200f2
+			public const int WL_LongTailMacaque = 2130837746;
+			
+			// aapt resource value: 0x7f0200f3
+			public const int WL_ML_BlackTipReefSharks = 2130837747;
+			
+			// aapt resource value: 0x7f0200f4
+			public const int WL_ML_HawksBillTurtle = 2130837748;
+			
+			// aapt resource value: 0x7f0200f5
+			public const int WL_ML_PufferFish = 2130837749;
+			
+			// aapt resource value: 0x7f0200f6
+			public const int WL_ML_Stingrays = 2130837750;
+			
+			// aapt resource value: 0x7f0200f7
+			public const int WL_ML_TriggerFish = 2130837751;
+			
+			// aapt resource value: 0x7f0200f8
+			public const int WL_ML_Turtle = 2130837752;
+			
+			// aapt resource value: 0x7f0200f9
+			public const int WL_NeedleFish = 2130837753;
+			
+			// aapt resource value: 0x7f0200fa
+			public const int WL_PacificReefEgret = 2130837754;
+			
+			// aapt resource value: 0x7f0200fb
+			public const int WL_pitviper = 2130837755;
+			
+			// aapt resource value: 0x7f0200fc
+			public const int WL_rockCoral = 2130837756;
+			
+			// aapt resource value: 0x7f0200fd
+			public const int WL_SoftCoral = 2130837757;
+			
+			// aapt resource value: 0x7f0200fe
+			public const int WL_SpongeCoral = 2130837758;
+			
+			// aapt resource value: 0x7f0200ff
+			public const int WL_TreeCoral = 2130837759;
+			
+			// aapt resource value: 0x7f020100
+			public const int WL_whiteEagle = 2130837760;
+			
+			// aapt resource value: 0x7f020101
+			public const int WL_wihteRumpedSharma = 2130837761;
 			
 			static Drawable()
 			{
