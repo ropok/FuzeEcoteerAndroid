@@ -22,22 +22,22 @@ namespace Sample
             base.OnViewCreated(view, savedInstanceState);
 
             #region buttonMenu
-            var menu_Intro = Activity.FindViewById<LinearLayout>(Resource.Id.MainMenu_Introduction);
-            var menu_LW = Activity.FindViewById<LinearLayout>(Resource.Id.MainMenu_LocalWildlife);
+            //var menu_Intro = Activity.FindViewById<LinearLayout>(Resource.Id.MainMenu_Introduction);
+            //var menu_LW = Activity.FindViewById<LinearLayout>(Resource.Id.MainMenu_LocalWildlife);
 
-            menu_Intro.Click += Menu_Intro_Click;
-            menu_LW.Click += Menu_LW_Click;
+            //menu_Intro.Click += Menu_Intro_Click;
+            //menu_LW.Click += Menu_LW_Click;
             #endregion
         }
 
-        private void Menu_LW_Click(object sender, System.EventArgs e)
-        {
-            StartActivity(new Intent(this.Context, typeof(activity_LW)));
-        }
+        //private void Menu_LW_Click(object sender, System.EventArgs e)
+        //{
+        //    StartActivity(new Intent(this.Context, typeof(activity_LW)));
+        //}
 
-        private void Menu_Intro_Click(object sender, System.EventArgs e)
-        {
-            //StartActivity(new Intent(this.Context, typeof(activity_LW)));
-        }
+        //private void Menu_Intro_Click(object sender, System.EventArgs e)
+        //{
+        //    //StartActivity(new Intent(this.Context, typeof(activity_LW)));
+        //}
     }
 }

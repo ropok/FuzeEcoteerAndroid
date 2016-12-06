@@ -4,80 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@+id/Menu_MainMenu"
+  <LinearLayout
+      android:id="@+id/Menu_MainMenu"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <TextView
+        android:id="@+id/MainMenuTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/MainMenuTxt"
+        android:gravity="center"
+        android:text="Home"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#54C7FC"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+      <!-- START [Home Menu] -->
+      <!--[Start] First Menu-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:weightSum="2"
+          android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Home"
-            android:textSize="20dp"
-            android:textColor="#ffffff"
-            android:background="#54C7FC"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp" />
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <!-- START [Menu Explore Perhentian] -->
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+          <!--First Menu-->
+          <LinearLayout
+              android:id="@+id/firstMenu"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2"
+              android:orientation="horizontal">
+            <!--menu Introduction-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <!-- Home1 - Introduction -->
-                <LinearLayout
-                    android:id="@+id/MainMenu_Introduction"
-                    android:background="@color/DarkBlue"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+              <RelativeLayout
+                  android:id="@+id/menu1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/DarkerBlue"
+                  android:clickable="true">
+                <ImageView
+                    android:id="@+id/ImageTurtle1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:orientation="vertical"
-                    android:paddingTop="@dimen/padding_MainMenu"
-                    android:paddingBottom="@dimen/padding_MainMenu">
-                    <ImageView
-                        android:id="@+id/ImageTurtleA1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/turtle3"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_below="@id/ImageTurtleA1"
-                        android:text="Introduction"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textColor="#000000" />
-                </LinearLayout>
-            <!-- Home 2 - Local Wildlife -->
-                <LinearLayout
-                    android:id="@+id/MainMenu_LocalWildlife"
-                    android:background="@color/DarkerBlue"
+                    android:src="@drawable/ic_home_white_48dp"
+                    android:layout_centerVertical="true" />
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:orientation="vertical"
-                    android:paddingTop="@dimen/padding_MainMenu"
-                    android:paddingBottom="@dimen/padding_MainMenu">
-                    <ImageView
-                        android:id="@+id/ImageTurtleB1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_pets_white_48dp"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_below="@id/ImageTurtleB1"
-                        android:text="Local Wildlife"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textColor="#000000" />
-                </LinearLayout>
+                    android:gravity="center"
+                    android:text="Introduction"
+                    android:textColor="#000000"
+                    android:layout_below="@id/ImageTurtle1" />
+              </RelativeLayout>
             </LinearLayout>
-        <!-- END [Menu Explore Perhentian] -->
-        </ScrollView>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.0dp">
+              <!--menu Wild Life-->
+              <RelativeLayout
+                  android:id="@+id/menu2"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/DarkestBlue"
+                  android:clickable="true">
+                <ImageView
+                    android:id="@+id/ImageTurtle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_pets_white_48dp"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Wild Life"
+                    android:textColor="#000000"
+                    android:layout_below="@id/ImageTurtle2" />
+              </RelativeLayout>
+            </LinearLayout>
+          </LinearLayout>
+          <!--[End] First Menu-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+          <!--[Start] Second Menu-->
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2"
+              android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+              <!--menu Map-->
+              <RelativeLayout
+                  android:id="@+id/menu3"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/DarkestBlue"
+                  android:clickable="true">
+                <ImageView
+                    android:id="@+id/ImageTurtle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_map_white_48dp"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Map"
+                    android:textColor="#000000"
+                    android:layout_below="@id/ImageTurtle3" />
+              </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="0.0dp">
+              <!--menu Explore Perhentian-->
+              <RelativeLayout
+                  android:id="@+id/menu4"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/DarkerBlue"
+                  android:clickable="true">
+                <ImageView
+                    android:id="@+id/ImageTurtle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_explore_white_48dp"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Explore Perhentian"
+                    android:textColor="#000000"
+                    android:layout_below="@id/ImageTurtle4" />
+              </RelativeLayout>
+            </LinearLayout>
+          </LinearLayout>
+          <!--[End] Second Menu-->
+        </LinearLayout>
+      </LinearLayout>
+      <!-- END [Home Menu] -->
+  </LinearLayout>
 </FrameLayout>
