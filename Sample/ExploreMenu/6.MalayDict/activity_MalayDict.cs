@@ -15,8 +15,8 @@ using Java.Lang;
 
 namespace Sample
 {
-    [Activity(Label = "Malay Dictionary", ParentActivity = typeof(MainActivity))]
-    [MetaData("android.support.PARENT_ACTIVITY", Value = "MainActivity")]
+    [Activity(Label = "Malay Dictionary", ParentActivity = typeof(activity_FuzeEcoteer))]
+    [MetaData("android.support.PARENT_ACTIVITY", Value = "activity_FuzeEcoteer")]
     public class activity_MalayDict : AppCompatActivity
     {
         private int count = 1;
